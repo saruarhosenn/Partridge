@@ -1,0 +1,38 @@
+/* 
+=====================================
+Variables
+=====================================
+*/
+:root {
+  /*___________ Font Family ___________*/
+  --primary-font-600: "Poppins 600";
+  --primary-font-400: "Poppins 400";
+  --secondary-font-800: "Nostromo Regular 800";
+  /*____________ Font Size ____________*/
+  --larger-title: 20rem;
+  --large-title: 20rem;
+  --medium-title: 20rem;
+  --small-title: 20rem;
+  --smaller-title: 20rem;
+  --size-xxl: 4.2rem;
+  --size-xl: 2.9rem;
+  --size-lg: 2rem;
+  --size-md: 1.8rem;
+  --size-sm: 1.6rem;
+  --size-xxm: 1.4rem;
+  /*____________ Text Color ____________*/
+  --primary-color: #656565;
+  --secondary-color: #b68e4b;
+  --third-color: #ffffff;
+  --four-color: #262626;
+  /*__________ Body BG Color __________*/
+  --body-bg: #ffffff;
+  /*_____________ BG Color _____________*/
+  --primary-bg: #455e4f;
+  --secondary-bg: #efefef;
+  --third-bg: #ffffff;
+  /*___________ BTN BG Color ___________*/
+  --btn-bg: #b68e4b;
+  --btn-hover-bg: #455e4f;
+  /*___________ Overlay Color ___________*/
+}
