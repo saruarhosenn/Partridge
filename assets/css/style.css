@@ -4,7 +4,6 @@ Fonts
 ========================================================
 */
 
-
 /* 
 ========================================================
 Variables
@@ -12,9 +11,12 @@ Variables
 */
 :root {
   /*___________ Font Family ___________*/
-  --primary-font-600: "Poppins 600";
-  --primary-font-400: "Poppins 400";
-  --secondary-font-800: "Nostromo Regular 800";
+  --primary-font-normal: "";
+  --primary-font-light: "";
+  --primary-font-light-italic: "";
+  --secondary-font-bold: "";
+  --secondary-font-normal: "";
+  --third-font-normal: "";
   /*____________ Font Size ____________*/
   --size-xxl: 20rem;
   --size-xl: 10rem;
@@ -400,6 +402,7 @@ Start Reuseble Components
 /*---- Mobile Menu 
 ------------------------*/
 .navBar .mobile-menu-wrapper {
+  /* display: none; */
   background: linear-gradient(
       to right,
       rgba(30, 47, 37, 0.9) 58.31%,
@@ -410,7 +413,7 @@ Start Reuseble Components
   padding-bottom: 3.8rem;
   position: absolute;
   top: -3rem;
-  left: 0;
+  right: -150%;
   width: 100%;
   height: 100vh;
   z-index: 99999;
@@ -419,9 +422,33 @@ Start Reuseble Components
   overflow-y: auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+#video-back {
+ 
+}
+.video {
+  width: 100% !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  z-index: -1;
+  position: static !important;
+  transform: translate(0) !important;
+  -webkit-transform: translate(0) !important;
+  -moz-transform: translate(0) !important;
+  -ms-transform: translate(0) !important;
+  -o-transform: translate(0) !important;
+}
+.navBar .open-menu {
+  right: 0%;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.mobile-menu-wrapper .menu-close .menu-close-btn {
+.mobile-menu-wrapper .menu-close .menu-close-svg-btn {
   margin-top: -0.3rem;
 }
 
@@ -513,6 +540,35 @@ Start Reuseble Components
 
 .btn-small {
   min-width: 26rem;
+}
+
+/*---- Background Image
+---------------------------*/
+.bg-image {
+  background: no-repeat top / cover;
+}
+
+/*---- Background Overlay
+------------------------------*/
+.bg-overlay {
+  position: relative;
+}
+
+.bg-overlay::after {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-overlay1::after {
+  background-color: rgba(38, 38, 38, 0.8);
+}
+
+.bg-overlay2::after {
+  background-color: rgba(69, 94, 79, 0.9);
 }
 
 /*----- Back to top Btn

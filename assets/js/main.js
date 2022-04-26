@@ -13,11 +13,11 @@
   });
 
   /* ====== SHOW, HIDE MENU ====== */
-  $(".menu-show-btn").click(function () {
-    $(".main-menu").addClass("navBar show-menu");
+  $(".menu-open-btn").click(function () {
+    $(".mobile-menu-wrapper").addClass("navBar open-menu");
   });
-  $(".menu-hide-btn").click(function () {
-    $(".main-menu").removeClass("navBar show-menu");
+  $(".menu-close-btn").click(function () {
+    $(".mobile-menu-wrapper").removeClass("navBar open-menu");
   });
 
   /* ====== HERO SLIDER ====== */
@@ -43,5 +43,19 @@
         items: 2,
       },
     },
+  });
+
+  //   $(function(){
+  //     // $('#video-back').vidbacking();
+  //     // $('body').vidbacking();
+  //     $('#video-back').vidbacking({
+  //       'masked': true
+  //     });
+  // });
+
+  $(function () {
+    $("#video-back").vidbacking({
+      masked: true,
+    });
   });
 })(jQuery);

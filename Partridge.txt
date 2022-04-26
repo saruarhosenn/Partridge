@@ -1,7 +1,7 @@
 Missing Work
 
-1) BG overlay
-2) Font Size
+1) BG overlay end
+2) Font Size end
 
 
 --- components-----

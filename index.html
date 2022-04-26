@@ -18,11 +18,10 @@
       type="image/x-icon"
       href="assets/images/logo.png"
     />
-    <!-------- Fonts -------->
-    <!-- <link rel="stylesheet" href="assets/fonts/fonts.css" /> -->
     <!------- Css Here ------->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.vidbacking.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -106,12 +105,12 @@
                 <div class="col-sm-6">
                   <!--===== menu close btn =====-->
                   <div class="menu-close text-end">
-                    <a href="javascript:void(0)" class="">
+                    <a href="javascript:void(0)" class="menu-close-btn">
                       <span class="size-xxm third-color text-uppercase me-20">Close</span>
                       <img
                       src="assets/images/reuse-image/header/close.svg"
                       alt="close"
-                      class="menu-close-btn"
+                      class="menu-close-svg-btn"
                     />
                     </a>
                   </div>
@@ -292,8 +291,20 @@
 		  Start Hero Section 
 		  =====================================================
 	  	-->
-      <section class="hero-section">
-        <div class="container"></div>
+      <section class="home-hero-section bg-overlay bg-overlay-1">
+        <div id="video-back">
+          <video poster="assets/images/home/hero/home-hero-bg.png" autoplay muted loop class="vidbacking video">
+            <source src="assets/video/home/hotel.mp4" type="video/mp4">
+            <!-- <source src="video1.webm" type="video/webm"> -->
+          </video>
+            <!-- html content of the div -->
+            <h1>Vidbacking Demo of &lt;div&gt; Background</h1>
+        </div>
+        <div class="container">
+          <div class="home-hero-title">
+
+          </div>
+        </div>
       </section>
       <!-- 
 			=====================================================
@@ -684,6 +695,7 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.vidbacking.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
