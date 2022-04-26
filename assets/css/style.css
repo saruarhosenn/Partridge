@@ -426,9 +426,7 @@ Start Reuseble Components
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
-#video-back {
- 
-}
+
 .video {
   width: 100% !important;
   height: 100vh !important;
@@ -441,6 +439,7 @@ Start Reuseble Components
   -ms-transform: translate(0) !important;
   -o-transform: translate(0) !important;
 }
+
 .navBar .open-menu {
   right: 0%;
   -webkit-transition: all 0.5s ease-in;
