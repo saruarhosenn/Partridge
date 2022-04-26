@@ -21,7 +21,7 @@
     <!------- Css Here ------->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/jquery.vidbacking.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/jquery.vidbacking.min.css" /> -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -292,14 +292,17 @@
 		  =====================================================
 	  	-->
       <section class="home-hero-section bg-overlay bg-overlay-1">
-        <div id="video-back">
+        <!-- <div id="video-back">
           <video poster="assets/images/home/hero/home-hero-bg.png" autoplay muted loop class="vidbacking video">
             <source src="assets/video/home/hotel.mp4" type="video/mp4">
-            <!-- <source src="video1.webm" type="video/webm"> -->
+            <source src="video1.webm" type="video/webm">
           </video>
-            <!-- html content of the div -->
             <h1>Vidbacking Demo of &lt;div&gt; Background</h1>
-        </div>
+        </div> -->
+        <div id="block2" class="video" style="width: 100%; height: 500px;"
+  data-vide-bg="mp4: assets/video/home/hotel, webm: video/ocean, ogv: video/ocean, poster: assets/images/home/hero/home-hero-bg"
+  data-vide-options="position: 0% 50%">
+</div>
         <div class="container">
           <div class="home-hero-title">
 
@@ -695,7 +698,8 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.vidbacking.min.js"></script>
+    <!-- <script src="assets/js/jquery.vidbacking.min.js"></script> -->
+    <script src="assets/js/jquery.vide.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

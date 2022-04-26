@@ -45,17 +45,9 @@
     },
   });
 
-  //   $(function(){
-  //     // $('#video-back').vidbacking();
-  //     // $('body').vidbacking();
-  //     $('#video-back').vidbacking({
-  //       'masked': true
-  //     });
+  // $(function () {
+  //   $("#video-back").vidbacking({
+  //     masked: true,
+  //   });
   // });
-
-  $(function () {
-    $("#video-back").vidbacking({
-      masked: true,
-    });
-  });
 })(jQuery);
