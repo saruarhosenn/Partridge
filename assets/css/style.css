@@ -427,7 +427,7 @@ Start Reuseble Components
   transition: all 0.5s ease-in;
 }
 
-.video {
+.home-hero-video {
   width: 100% !important;
   height: 100vh !important;
   object-fit: cover !important;
