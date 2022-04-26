@@ -1,3 +1,23 @@
+Missing Work
+
+1) BG overlay
+2) Font Size
+
+
+--- components-----
+Header
+Footer
+mobile menu
+button -- end
+border
+datepicker
+guest form
+newslette
+form
+slider button
+SIX SOUTH - ROOFTOP BAR
+
+
 /* 
 =====================================
 Variables
@@ -34,9 +54,9 @@ Variables
 
 /* 
 200-266[huge],220[1](use-huge ___ page-all) ***** (line-height: 266)
-100-12[5],60[2](use-7 ___ page-2) ***** (line-height: 12)
-80-100[23],106[],80[1](use-24 ___ page-8) ***** (line-height: 100)
 20-60[],40[1],26[17],24[2],40[](use-19 ___ page-8) ***** (line-height: 26)
+80-100[23],106[],80[1](use-24 ___ page-8) ***** (line-height: 100)
+100-12[5],60[2](use-7 ___ page-2) ***** (line-height: 12)
 16-19[](use- ___ page-) *****
 14-18[4](use- ___ page-) *****
 ---------------------------------------------------------------
@@ -48,9 +68,3 @@ Variables
 24-29[],26[4]((strat 4 number page) use-4 ___ page-3) delete
 */
 /* 
-
-/* 
-Garamond Premier Pro = 400, display
-Josefin Sans = 400, light, light Italic
-Zapfino = 400
-*/
