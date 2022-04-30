@@ -1,8 +1,93 @@
 /* 
 ========================================================
-Fonts
+Fonts 
 ========================================================
 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+@font-face {
+  font-family: "garamond-premier-pro-display-400";
+  src: url("https://use.typekit.net/af/96f648/00000000000000003b9ade35/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/96f648/00000000000000003b9ade35/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/96f648/00000000000000003b9ade35/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "garamond-premier-pro-400";
+  src: url("https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/e2b8db/00000000000000003b9ade23/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "josefin-sans-400";
+  src: url("https://use.typekit.net/af/8f29b1/00000000000000007735a0cc/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/8f29b1/00000000000000007735a0cc/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/8f29b1/00000000000000007735a0cc/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "josefin-sans-300";
+  src: url("https://use.typekit.net/af/8c0ee0/00000000000000007735a0ce/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/8c0ee0/00000000000000007735a0ce/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/8c0ee0/00000000000000007735a0ce/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "josefin-sans-italic-300";
+  src: url("https://use.typekit.net/af/ce8878/00000000000000007735a0c3/30/l?subset_id=2&fvd=i3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/ce8878/00000000000000007735a0c3/30/d?subset_id=2&fvd=i3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/ce8878/00000000000000007735a0c3/30/a?subset_id=2&fvd=i3&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+/* zapfino */
+@font-face {
+  font-family: "fino-sans-400";
+  src: url("https://use.typekit.net/af/c5d7c7/00000000000000007735af4f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/c5d7c7/00000000000000007735af4f/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/c5d7c7/00000000000000007735af4f/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
 
 /* 
 ========================================================
@@ -11,11 +96,11 @@ Variables
 */
 :root {
   /*___________ Font Family ___________*/
-  --primary-font-normal: "";
-  --primary-font-light: "";
-  --primary-font-light-italic: "";
-  --secondary-font-bold: "";
-  --secondary-font-normal: "";
+  --primary-font-normal: "josefin-sans-400";
+  --primary-font-light: "josefin-sans-300";
+  --primary-font-light-italic: "josefin-sans-italic-300";
+  --secondary-font-display-normal: "garamond-premier-pro-display-400";
+  --secondary-font-normal: "garamond-premier-pro-400";
   --third-font-normal: "";
   /*____________ Font Size ____________*/
   --size-xxl: 20rem;
@@ -29,12 +114,14 @@ Variables
   --secondary-color: #b68e4b;
   --third-color: #ffffff;
   --four-color: #262626;
+  --five-color: #dcd3c5;
   /*__________ Body BG Color __________*/
   --body-bg: #ffffff;
   /*_____________ BG Color _____________*/
   --primary-bg: #455e4f;
   --secondary-bg: #efefef;
   --third-bg: #ffffff;
+  --four-bg: #f5f3ef;
   /*___________ BTN BG Color ___________*/
   --btn-bg: #b68e4b;
   --btn-hover-bg: #455e4f;
@@ -56,8 +143,8 @@ html {
 }
 
 body {
-  /* font-family: var(--primary-font-400); */
-  font-size: var(--size-sm);
+  font-family: var(--primary-font-light);
+  font-size: var(--size-xxm);
   color: var(--primary-color);
   background-color: var(--body-bg);
   line-height: 1.6;
@@ -132,6 +219,11 @@ hr {
   background-color: transparent;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .tran-linear {
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
@@ -151,6 +243,62 @@ img,
   min-height: 100vh;
 }
 
+.xy-hideen {
+  overflow: hidden;
+}
+
+.x-hideen {
+  overflow-x: hidden;
+}
+
+.vh-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 11;
+}
+
+.text-space-md {
+  letter-spacing: 1rem;
+  word-spacing: 0.7rem;
+}
+
+.text-space-sm {
+  letter-spacing: 0.3rem;
+  word-spacing: 0.6rem;
+}
+
+.py-180 {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+}
+
+.pt-180 {
+  padding-top: 18rem;
+}
+
+.pb-180 {
+  padding-bottom: 18rem;
+}
+
+.py-90 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.pt-90 {
+  padding-top: 9rem;
+}
+
+.pb-90 {
+  padding-bottom: 9rem;
+}
+
 .py-160 {
   padding-top: 16rem;
   padding-bottom: 16rem;
@@ -162,6 +310,11 @@ img,
 
 .pb-160 {
   padding-bottom: 16rem;
+}
+
+.py-80 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pt-80 {
@@ -177,16 +330,28 @@ img,
 Font Family
 ===================================
 */
-.primary-font-600 {
-  font-family: var(--primary-font-600);
+.primary-font-normal {
+  font-family: var(--primary-font-normal);
 }
 
-.primary-font-400 {
-  font-family: var(--primary-font-400);
+.primary-font-light {
+  font-family: var(--primary-font-light);
 }
 
-.secondary-font-800 {
-  font-family: var(--secondary-font-800);
+.primary-font-light-italic {
+  font-family: var(--primary-font-light-italic);
+}
+
+.secondary-font-display-normal {
+  font-family: var(--secondary-font-display-normal);
+}
+
+.secondary-font-normal {
+  font-family: var(--secondary-font-normal);
+}
+
+.third-font-normal {
+  font-family: var(--third-font-normal);
 }
 
 /* 
@@ -201,12 +366,12 @@ Font Size
 
 .size-xl {
   font-size: var(--size-xl);
-  line-height: 1.3;
+  line-height: 1.1;
 }
 
 .size-lg {
   font-size: var(--size-lg);
-  line-height: 127%;
+  line-height: 125%;
 }
 
 .size-md {
@@ -245,6 +410,10 @@ Text Color
   color: var(--four-color);
 }
 
+.five-color {
+  color: var(--five-color);
+}
+
 /* 
 ===================================
 Background Color
@@ -260,6 +429,10 @@ Background Color
 
 .third-bg {
   background-color: var(--third-bg);
+}
+
+.four-bg {
+  background-color: var(--four-bg);
 }
 
 /* 
@@ -405,8 +578,8 @@ Start Reuseble Components
   /* display: none; */
   background: linear-gradient(
       to right,
-      rgba(30, 47, 37, 0.9) 58.31%,
-      rgba(69, 94, 79, 0.8) 41.66%
+      rgba(30, 47, 37, 0.9) 60%,
+      rgba(69, 94, 79, 0.8) 40%
     ),
     url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top / cover;
   padding-top: 3.8rem;
@@ -415,11 +588,13 @@ Start Reuseble Components
   top: -3rem;
   right: -150%;
   width: 100%;
+  height: 100%;
   height: 100vh;
   z-index: 99999;
   background-color: #4c5158;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+  /* hide scrollbar but allow scrolling */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   -webkit-transition: all 0.5s ease-in;
@@ -427,17 +602,12 @@ Start Reuseble Components
   transition: all 0.5s ease-in;
 }
 
-.home-hero-video {
-  width: 100% !important;
-  height: 100vh !important;
-  object-fit: cover !important;
-  z-index: -1;
-  position: static !important;
-  transform: translate(0) !important;
-  -webkit-transform: translate(0) !important;
-  -moz-transform: translate(0) !important;
-  -ms-transform: translate(0) !important;
-  -o-transform: translate(0) !important;
+.navBar .mobile-menu-wrapper::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.stick .mobile-menu-wrapper {
+  top: 0rem;
 }
 
 .navBar .open-menu {
@@ -448,27 +618,67 @@ Start Reuseble Components
 }
 
 .mobile-menu-wrapper .menu-close .menu-close-svg-btn {
-  margin-top: -0.3rem;
+  margin-top: -0.6rem;
 }
 
-.mobile-menu-wrapper .menu .main-menu .menu-item:not(:last-child) {
+.mobile-menu-wrapper .mobile-menu-row {
+  margin-left: -14rem;
+  margin-right: -14rem;
+}
+
+.mobile-menu-wrapper .mobile-menu-row > * {
+  padding-left: 14rem;
+  padding-right: 14rem;
+}
+
+.mobile-menu-wrapper
+  .mobile-menu
+  .mobile-main-menu
+  .menu-item:not(:last-child) {
   margin-bottom: 7rem;
 }
 
-.mobile-menu-wrapper .menu .main-menu .menu-item .menu-link-number {
+.mobile-menu-wrapper
+  .mobile-menu
+  .mobile-main-menu
+  .menu-item
+  .menu-link-number {
+  font-family: var(--secondary-font-normal);
   font-size: var(--size-md);
   line-height: 1.4;
   color: var(--secondary-color);
 }
-.mobile-menu-wrapper .menu .main-menu .menu-item .menu-link-text {
+
+.mobile-menu-wrapper .mobile-menu .mobile-main-menu .menu-item .menu-link-text {
+  font-family: var(--primary-font-normal);
   font-size: 2.4rem;
+  text-transform: uppercase;
   line-height: 2.9rem;
   color: var(--third-color);
 }
 
+.mobile-menu-wrapper
+  .mobile-menu
+  .mobile-main-menu
+  .menu-item
+  .menu-link-text:hover {
+  color: var(--secondary-color);
+}
+
+.mobile-menu-wrapper .mobile-menu-contact .mobile-menu-contact-title {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.mobile-menu-contact .mobile-menu-contact-desc .directions-link img {
+  width: 0.8rem;
+}
+
+.mobile-menu-contact .mobile-menu-social1 .mobile-menu-social-item1 a:hover {
+  color: var(--third-color);
+}
+
 .stick {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
   position: fixed;
   top: 0;
   background-color: var(--four-color);
@@ -513,10 +723,11 @@ Start Reuseble Components
   align-items: center;
   justify-content: center;
   height: 6rem;
-  /* font-family: ; */
+  font-family: var(--primary-font-normal);
   font-size: var(--size-md);
   color: var(--third-color);
-  line-height: 2.4rem;
+  line-height: 0 !important;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   background-color: var(--btn-bg);
   -webkit-transition: all 0.3s ease-in-out;
@@ -530,21 +741,32 @@ Start Reuseble Components
 }
 
 .btn-large {
-  min-width: 53.6rem;
+  width: 100%;
+  max-width: 53.6rem;
 }
 
 .btn-medium {
-  min-width: 29rem;
+  width: 100%;
+  max-width: 29rem;
 }
 
 .btn-small {
-  min-width: 26rem;
+  width: 100%;
+  max-width: 26rem;
 }
 
 /*---- Background Image
 ---------------------------*/
-.bg-image {
+.bg-image-top {
   background: no-repeat top / cover;
+}
+
+.bg-image-center {
+  background: no-repeat center / cover;
+}
+
+.bg-image-bottom {
+  background: no-repeat bottom / cover;
 }
 
 /*---- Background Overlay
@@ -556,18 +778,66 @@ Start Reuseble Components
 .bg-overlay::after {
   content: "";
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .bg-overlay1::after {
-  background-color: rgba(38, 38, 38, 0.8);
+  background-color: #262626;
+  opacity: 40%;
 }
 
 .bg-overlay2::after {
-  background-color: rgba(69, 94, 79, 0.9);
+  background-color: #455e4f;
+  opacity: 80%;
+}
+
+/*---- Slider Overlay
+------------------------------*/
+.slider-overlay {
+  position: relative;
+}
+
+.slider-overlay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(182, 142, 75, 0.9)
+  );
+  width: 100%;
+  height: 8.8rem;
+}
+
+/*---- White Slider BTN
+------------------------------*/
+.slider-btn-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(100deg)
+    brightness(1006%) contrast(103%);
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(100deg)
+    brightness(1006%) contrast(103%);
+}
+
+/*----- Border
+---------------------------*/
+.h-line {
+  margin: 0 3rem;
+  flex: 1;
+  border-bottom: 1px solid;
+}
+
+.h-line-1 {
+  border-color: var(--secondary-color);
+}
+
+.h-line-2 {
+  border-color: var(--third-bg);
 }
 
 /*----- Back to top Btn
@@ -578,7 +848,7 @@ Start Reuseble Components
   bottom: 3rem;
   right: 3rem;
   z-index: 99;
-  background: var(--btn-bg);
+  background: var(--primary-bg);
   width: 4rem;
   height: 4rem;
 }
@@ -586,7 +856,114 @@ Start Reuseble Components
 #scroll-up-btn img {
   width: 2rem;
   height: 2rem;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
+
+/*---- Guests Testimonials Slider 
+-----------------------------------------*/
+.guests-testimonials-bg-top {
+  padding: 7rem 0;
+}
+
+.guests-testimonials-bg-bottom {
+  width: 92%;
+  background-size: 100% 100% !important;
+}
+
+.guests-testimonials-slider-container {
+  padding-left: 19rem;
+  padding-right: 19rem;
+}
+
+.guests-testimonials-slider-text p {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+.guests-testimonials-slider-bottom-left-text p:nth-child(1) {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+.guests-testimonials-slider-btn-wrapper {
+  padding-left: 19rem;
+  padding-right: 6rem;
+}
+
+/*---- Newsletter
+---------------------------*/
+.newsletter-title .newsletter-form-title {
+  font-size: 4rem;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.newsletter-form-wrapper {
+  display: none;
+}
+
+.newsletter-form .newsletter-form-name {
+  font-size: 4rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form .newsletter-form-name span {
+  color: var(--secondary-color);
+}
+
+.newsletter-form
+  :is(.newsletter-form-name, .newsletter-form-input, .newsletter-form-input::placeholder) {
+  letter-spacing: 0.3rem;
+  word-spacing: 0.6rem;
+}
+
+.newsletter-form-input,
+.newsletter-form-input::placeholder {
+  width: 100%;
+  display: block;
+  padding-bottom: 1rem;
+  font-family: var(--primary-font-normal);
+  font-size: var(--size-xxm);
+  color: var(--third-color);
+}
+
+.newsletter-form-input::placeholder {
+  text-transform: uppercase;
+}
+
+.newsletter-form-input:focus,
+.newsletter-form-input {
+  border-bottom: 2px solid var(--secondary-bg);
+}
+
+.newsletter-close .newsletter-close-icon {
+  margin-top: -0.5rem;
+}
+
+.newsletter-form-btn .newsletter-form-btn-submit:hover {
+  background-color: var(--secondary-color);
+}
+
+/*---- Footer Section
+---------------------------*/
+.footer-section {
+  background-color: #000000;
+  padding: 3.5rem 0 2rem;
+}
+
+.footer-page-link .footer-page-link-item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.footer-bottom-text .footer-bottom-text-link span {
+  text-decoration: underline;
+}
+
 /* 
 =========================================================================
 End Reuseble Components
@@ -597,12 +974,607 @@ End Reuseble Components
 /* 
 =========================================================================
 =========================================================================
+Start Home Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+/*------------- 
+Hero Section 
+------------------------
+*/
+.home-hero-section {
+  overflow: hidden;
+}
+
+.home-hero-video {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.home-hero-wrapper .home-hero-text .home-hero-text-title {
+  font-size: 12rem;
+  line-height: 1.2;
+}
+
+/* .home-hero-video {
+  width: 100% !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  z-index: -1;
+  position: static !important;
+  transform: translate(0) !important;
+  -webkit-transform: translate(0) !important;
+  -moz-transform: translate(0) !important;
+  -ms-transform: translate(0) !important;
+  -o-transform: translate(0) !important;
+} */
+
+/*------------- 
+Getaway In Section 
+------------------------
+*/
+.getaway-left .getaway-left-img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.getaway-right-col {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 99;
+}
+
+.getaway-right .getaway-right-content {
+  max-width: 67.4rem;
+}
+
+.getaway-right .getaway-right-title {
+  position: relative;
+  font-size: 6rem;
+  line-height: 1.1;
+}
+
+.getaway-right .getaway-right-title::after {
+  content: "Historic";
+  right: -50px;
+  position: absolute;
+  font-size: ver(--size-xl);
+  color: var(--five-color);
+}
+
+/*------------- 
+Gallery Section 
+------------------------
+*/
+.home-gallery {
+  overflow: hidden;
+}
+
+.home-gallery::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #262626;
+  opacity: 50%;
+}
+
+.home-gallery::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  background-color: rgba(182, 142, 75, 0.7);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  z-index: 11;
+}
+
+.home-gallery:hover::after {
+  bottom: 0%;
+}
+
+.home-gallery .home-gallery-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 111;
+}
+
+.home-gallery .home-gallery-text .home-gallery-title {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+/*------------- 
+Relax Section  
+---------------------------
+*/
+.relax-text {
+  max-width: 61.5rem;
+}
+
+.relax-text .relax-text-bg {
+  position: relative;
+  margin-top: -10rem;
+  z-index: -1;
+}
+
+.relax-text .relax-text-desc {
+  max-width: 50.3rem;
+}
+
+/*------------- 
+Dining Section  
+---------------------------
+*/
+.home-dining-text {
+  max-width: 55.6rem;
+}
+
+/*------------- 
+Rooftop Bar Section  
+---------------------------
+*/
+.home-rooftop-bar-text {
+  max-width: 54.6rem;
+}
+/* 
+=========================================================================
+=========================================================================
+End Home Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+
+/* 
+=========================================================================
+=========================================================================
+Start Accommodations Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+/*------------- 
+Rooms Slider Resuseble Style
+-----------------------------------
+*/
+.superior-text-wrapper {
+  max-width: 53.6rem;
+}
+
+.rooms-title {
+  margin-top: -2rem;
+}
+
+.rooms-slider-btn {
+  width: 86%;
+  position: absolute;
+  left: 50%;
+  bottom: 4.7rem;
+  z-index: 99;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.rooms-slider-btn hr {
+  margin-left: 0;
+}
+
+/*------------- 
+Hospitality Section 
+------------------------------
+*/
+.hospitality-text {
+  max-width: 136.4rem;
+}
+
+.hospitality-text-title::after {
+  content: "History";
+  right: -50px;
+  position: absolute;
+  font-size: ver(--size-xl);
+  line-height: 1.1;
+  color: var(--five-color);
+}
+
+/*------------- 
+Accessible Rooms Section 
+------------------------------
+*/
+.accessible-rooms-text {
+  max-width: 56.9rem;
+}
+
+.accessible-rooms-text .accessible-rooms-text-desc {
+  max-width: 39.8rem;
+}
+
+.accessible-rooms-form .accessible-rooms-form-input {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-sm);
+  color: var(--four-color);
+  background-color: var(--third-bg);
+  width: 100%;
+  height: 6rem;
+  padding: 0 1.6rem;
+}
+
+.accessible-rooms-form .accessible-rooms-form-message-input {
+  min-height: 25.8rem;
+}
+
+.accessible-rooms-form .accessible-rooms-form-input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: #a0a5a8;
+}
+
+.accessible-rooms-form .accessible-rooms-form-input,
+.accessible-rooms-form .accessible-rooms-form-input::placeholder {
+  font-size: var(--size-sm);
+}
+
+.accessible-rooms-form-box .accessible-rooms-form-submit:hover {
+  background-color: var(--secondary-color);
+}
+
+/* 
+=========================================================================
+=========================================================================
+End Accommodations Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+
+/* 
+=========================================================================
+=========================================================================
+Start Dining Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+/*------------- 
+Dine Section
+------------------------------
+*/
+.dine-text {
+  max-width: 53.6rem;
+}
+
+.dine-img-col {
+  position: absolute;
+  top: 50%;
+  right: -1.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.dine-img-title {
+  width: 95%;
+  position: absolute;
+  top: 2.4rem;
+  left: 1.9rem;
+}
+
+/*------------- 
+Dining Section
+------------------------------
+*/
+.dine-dining-text {
+  max-width: 55.6rem;
+}
+
+/*------------- 
+Dining Section
+------------------------------
+*/
+.dine-dining-text {
+  max-width: 55.6rem;
+}
+
+/*------------- 
+Rooftop Bar Section
+------------------------------
+*/
+.dine-rooftop-bar-text {
+  max-width: 54.6rem;
+}
+
+/*------------- 
+Food Menu Item Section
+------------------------------
+*/
+.food-manu-item-name,
+.food-manu-item-slider-btn {
+  width: 90%;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.food-manu-item-slider::after {
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(182, 142, 75, 0.9),
+    rgba(255, 255, 255, 0)
+  );
+  height: 14.5rem;
+}
+
+.dining-gallery-img .dining-gallery-img-name {
+  width: 90%;
+  position: absolute;
+  top: 3rem;
+  left: 2.2rem;
+  z-index: 99;
+}
+
+/*------------- 
+Culinary Team Section 
+------------------------------
+*/
+.culinary-team-title p::after{
+  content: "South";
+  right: -150px;
+  position: absolute;
+  font-size: ver(--size-xl);
+  color: var(--five-color);
+}
+/* 
+=========================================================================
+=========================================================================
+End Dining Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+
+/* 
+=========================================================================
+=========================================================================
+Start Weddings Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+/*------------- 
+Weddings Section
+------------------------------
+*/
+.weddings-text {
+  max-width: 67.4rem;
+}
+
+.weddings-img-col {
+  position: absolute;
+  top: 50%;
+  right: -1.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+/*------------- 
+Weddings Food Menu Item Section
+------------------------------
+*/
+.weddings-food-manu-item-name,
+.weddings-food-manu-item-slider-btn {
+  width: 90%;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/*------------- 
+Weddings Cakes Section
+------------------------------
+*/
+.weddings-cakes-text {
+  max-width: 67.4rem;
+}
+
+/*------------- 
+Brides Testimonials Section
+--------------------------------
+*/
+.brides-testimonials {
+  padding: 26rem 0 23rem;
+}
+
+.brides-testimonials-slider-wrapper {
+  position: relative;
+  z-index: 111;
+}
+
+.brides-testimonials-slide {
+  max-width: 108.8rem;
+}
+
+.brides-testimonials-slide .brides-testimonials-slide-desc {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.brides-testimonials-slide .brides-testimonials-slide-man-name {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+/* 
+=========================================================================
+=========================================================================
+End Weddings Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+
+/* 
+=========================================================================
+=========================================================================
+Start Events Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+/*------------- 
+Hero Section
+------------------------------
+*/
+.events-hero-text .events-hero-text-title::after {
+  content: "&";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: var(--secondary-font-display-normal);
+  font-size: 40rem;
+  line-height: 6rem;
+  color: var(--five-color);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/*------------- 
+Events Section
+------------------------------
+*/
+.events-text {
+  max-width: 67.4rem;
+}
+
+.events-img-col {
+  position: absolute;
+  top: 50%;
+  right: -1.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+/* 
+=========================================================================
+=========================================================================
+End Events Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+
+/* 
+=========================================================================
+=========================================================================
+Start History Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+/*------------- 
+History Section
+------------------------------
+*/
+.history-text {
+  max-width: 61rem;
+}
+
+.history-img-col {
+  position: absolute;
+  top: 50%;
+  right: -1.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+/*------------- 
+Timeline Section
+------------------------------
+*/
+.timeline-text:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.timeline-text .timeline-text-title {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+/*------------- 
+Experience Section
+------------------------------
+*/
+.history-experience-img .history-experience-img-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  text-align: center;
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 11;
+}
+/* 
+=========================================================================
+=========================================================================
+End History Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+
+/* 
+=========================================================================
+=========================================================================
 Start Page Style ______________________
 =========================================================================
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -621,7 +1593,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -640,7 +1612,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -659,7 +1631,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -678,7 +1650,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -697,7 +1669,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -716,7 +1688,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -735,7 +1707,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -754,7 +1726,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -773,7 +1745,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 
@@ -792,121 +1764,7 @@ Start Page Style ______________________
 =========================================================================
 */
 /*------------- 
- Section Style
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section Style
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section Style
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section Style
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section Style
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section Style
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section Style
+ Section
 ------------------------------
 */
 /* 

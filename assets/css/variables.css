@@ -1,13 +1,16 @@
 /* 
-=====================================
+========================================================
 Variables
-=====================================
+========================================================
 */
 :root {
   /*___________ Font Family ___________*/
-  --primary-font-600: "Poppins 600";
-  --primary-font-400: "Poppins 400";
-  --secondary-font-800: "Nostromo Regular 800";
+  --primary-font-normal: "josefin-sans-400";
+  --primary-font-light: "josefin-sans-300";
+  --primary-font-light-italic: "josefin-sans-italic-300";
+  --secondary-font-display-normal: "garamond-premier-pro-display-400";
+  --secondary-font-normal: "garamond-premier-pro-400";
+  --third-font-normal: "";
   /*____________ Font Size ____________*/
   --size-xxl: 20rem;
   --size-xl: 10rem;
@@ -20,17 +23,20 @@ Variables
   --secondary-color: #b68e4b;
   --third-color: #ffffff;
   --four-color: #262626;
+  --five-color: #DCD3C5;
   /*__________ Body BG Color __________*/
   --body-bg: #ffffff;
   /*_____________ BG Color _____________*/
   --primary-bg: #455e4f;
   --secondary-bg: #efefef;
   --third-bg: #ffffff;
+  --four-bg: #F5F3EF;
   /*___________ BTN BG Color ___________*/
   --btn-bg: #b68e4b;
   --btn-hover-bg: #455e4f;
   /*___________ Overlay Color ___________*/
 }
+
 
 /* 
 200-266[huge],220[1](use-huge ___ page-all) ***** (line-height: 266)
@@ -50,7 +56,7 @@ Variables
 /* 
 
 /* 
-Garamond Premier Pro = 400, display
-Josefin Sans = 400, light, light Italic
-Zapfino = 400
+Garamond Premier Pro = 400, display --- 
+Josefin Sans = 400, light --- , light Italic--> missing
+Zapfino = 400 missing
 */

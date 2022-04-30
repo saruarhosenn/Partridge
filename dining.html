@@ -21,7 +21,6 @@
     <!------- Css Here ------->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="assets/css/jquery.vidbacking.min.css" /> -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -289,27 +288,11 @@
 		  Start Hero Section 
 		  =====================================================
 	  	-->
-      <section class="home-hero-section position-relative">
-        <!-- <div id="video-back">
-          <video poster="assets/images/home/hero/home-hero-bg.png" autoplay muted loop class="vidbacking home-hero-video">
-            <source src="assets/video/home/hotel.mp4" type="video/mp4">
-            <source src="video1.webm" type="video/webm">
-          </video>
-            <h1>Vidbacking Demo of &lt;div&gt; Background</h1>
-        </div> -->
-
-        <!--===== hero bg background video =====-->
-        <div 
-          id="block2" 
-          class="home-hero-video bg-overlay bg-overlay1"
-          data-vide-bg="mp4: assets/video/home/hotel, webm: video/ocean, ogv: video/ocean, poster: assets/images/home/hero/home-hero-bg"
-          data-vide-options="position: 0% 50%">
-        </div>
+      <section class="dining-hero-section min-height-100vh position-relative bg-overlay bg-overlay1 bg-image-top" style="background-image: url('./assets/images/dining/hero/dining-hero-bg.png');">
         <!--====== hero content ======-->
-        <div class="container home-hero-wrapper vh-center mt-50">
-          <div class="home-hero-text text-center">
-            <p class="third-font-normal size-lg third-color">Welcome to</p>
-            <p class="home-hero-text-title secondary-font-display-normal third-color text-uppercase text-space-md ">THE PARTRIDGE INN</p>
+        <div class="container dining-hero-wrapper vh-center mt-50">
+          <div class="dining-hero-text text-center">
+            <p class="dining-hero-text-title secondary-font-display-normal size-xxl third-color text-uppercase text-space-md ">DINE</p>
             <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo">
           </div>
         </div>
@@ -322,186 +305,25 @@
 
       <!-- 
 		  =====================================================
-		  Start Check In Section 
+		  Start Dine Section 
 		  =====================================================
 		  -->
-      <section class="check-in-section">
+      <section class="dine-section pt-160 pb-80 position-relative">
         <div class="container">
           <!----- Start row ----->
-          <div class="row">
-            <article class="col-lg-"></article>
-          </div>
-          <!------ End row ------>
-        </div>
-      </section>
-      <!-- 
-		  =====================================================
-		  End Check In Section 
-		  =====================================================
-		  -->
-
-      <!-- 
-		  =====================================================
-		  Start Getaway Section 
-		  =====================================================
-		  -->
-      <section class="getaway-section position-relative py-180">
-        <div class="container px-0">
-          <!----- Start row ----->
-          <div class="row g-0">
-            <article class="col-lg-7">
-              <div class="getaway-left">
-                <img src="assets/images/home/getaway/getaway.png" alt="getaway" class="getaway-left-img">
-              </div>
-            </article>
-            <article class="col-lg-6 getaway-right-col four-bg">
-              <div class="getaway-right four-bg px-80 py-80">
-                <div class="getaway-right-content">
-                  <p class="getaway-right-title secondary-font-display-normal four-color d-table mb-35">Make Your Getaway</p>
-                  <p class="primary-font-light size-md four-color mb-35">Part of the Curio Collection by Hilton, the Partridge Inn in Augusta, Georgia, stands tall, with more distinction, class, and grandeur than it ever has before. Previous guests will see plenty of familiar faces, delivering the same world-class service we’re known for, but with the unmistakable energy that comes from the inn’s new beginning. Experience it for yourself by booking one of more than 140 unique rooms and suites. </p>
-                  <a href="#" class="btn-bg btn-medium">RESERVE NOW</a>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!------ End row ------>
-        </div>
-      </section>
-      <!-- 
-		  =====================================================
-		  End Getaway Section 
-		  =====================================================
-		  -->
-
-      <!-- 
-		  =====================================================
-		  Start Gallery Section 
-		  =====================================================
-		  -->
-      <section class="home-gallery-section pb-90">
-        <div class="container">
-          <!----- Start row ----->
-          <div class="row g-4">
-            <article class="col-lg-8">
-              <a href="#" class="home-gallery d-block position-relative">
-                <div class="home-gallery-img">
-                  <img src="assets/images/home/gallery/gallery1.png" alt="gallery" class="w-100">
-                </div>
-                <div class="home-gallery-text">
-                  <p class="home-gallery-title text-center secondary-font-display-normal third-color text-uppercase text-space-sm">WEDDINGS</p>
-                </div>
-              </a>
-            </article>
-            <article class="col-lg-4">
-              <a href="#" class="home-gallery d-block position-relative">
-                <div class="home-gallery-img">
-                  <img src="assets/images/home/gallery/gallery2.png" alt="gallery" class="w-100">
-                </div>
-                <div class="home-gallery-text">
-                  <p class="home-gallery-title text-center secondary-font-display-normal third-color text-uppercase text-space-sm">GALLERY</p>
-                </div>
-              </a>
-            </article>
-            <article class="col-lg-4">
-              <a href="#" class="home-gallery d-block position-relative">
-                <div class="home-gallery-img">
-                  <img src="assets/images/home/gallery/gallery3.png" alt="gallery" class="w-100">
-                </div>
-                <div class="home-gallery-text">
-                  <p class="home-gallery-title text-center secondary-font-display-normal third-color text-uppercase text-space-sm">HOTEL 
-                    PACKAGES</p>
-                </div>
-              </a>
-            </article>
-            <article class="col-lg-8">
-              <a href="#" class="home-gallery d-block position-relative">
-                <div class="home-gallery-img">
-                  <img src="assets/images/home/gallery/gallery4.png" alt="gallery" class="w-100">
-                </div>
-                <div class="home-gallery-text">
-                  <p class="home-gallery-title text-center secondary-font-display-normal third-color text-uppercase text-space-sm">MEETINGS EVENTS</p>
-                </div>
-              </a>
-            </article>
-          </div>
-          <!------ End row ------>
-        </div>
-      </section>
-      <!-- 
-		  =====================================================
-		  End Gallery Section 
-		  =====================================================
-		  -->
-
-      <!-- 
-		  =====================================================
-		  Start Only BG Section 
-		  =====================================================
-		  -->
-      <section class="only-bg-section py-90">
-        <div class="container-fluid px-0">
-          <img src="assets/images/home/home-bg-section-bg.png" alt="bg" class="only-bg-img w-100">
-        </div>
-      </section>
-      <!-- 
-		  =====================================================
-		  End Only BG Section 
-		  =====================================================
-		  -->
-
-      <!-- 
-		  =====================================================
-		  Start Relax Section 
-		  =====================================================
-		  -->
-      <section class="relax-section py-90">
-        <div class="container">
-          <!----- Start row ----->
-          <div class="row g-5 align-items-center">
+          <div class="row align-items-center">
             <article class="col-lg-5">
-              <div class="relax-text">
-                <p class="size-xxm primary-font-normal primary-color text-uppercase text-space-sm">ACCOMMODATIONS</p>
-                <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md ">Relax.</p>
-                <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md ">Rejuvenate.</p>
-                <img src="assets/images/home/relax/relax-text-bg.svg" alt="relax-text-bg" class="relax-text-bg">
-                <p class="relax-text-desc size-md primary-font-light four-color mt-10 mb-35">Each well-appointed room has been designed for the utmost comfort while maintaining its original charm and character. We even offer pet-friendly rooms to accommodate your four-legged family members. On-site amenities include complimentary Wi-Fi, a 24/7 fitness center, world-class dining, an outdoor swimming pool and courtyard area, plus two lounge and bar areas to make everyone feel right at home.</p>
-                <a href="#" class="btn-bg btn-small">RESERVE NOW</a>
+              <div class="dine-text">
+                <p class="size-xxm primary-font-normal primary-color text-uppercase text-space-sm mb-10">Dine</p>
+                <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md ">FARE WITH</p>
+                <p class="dine-title size-xl five-color">Flare</p>
+                <p class="size-md primary-font-light four-color mt-10">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
               </div>
             </article>
-            <article class="col-lg-7">
-              <div class="relax-slider-container">
-                <div class="relax-slider-wrapper rooms-slider xy-hideen">
-                  <div class="swiper-wrapper ">
-                    <div class="swiper-slide">
-                      <div class="relax-slider">
-                        <img src="assets/images/home/relax/relax.png" alt="relax" class="w-100">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="relax-slider">
-                        <img src="assets/images/home/relax/relax.png" alt="relax" class="w-100">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="relax-slider">
-                        <img src="assets/images/home/relax/relax.png" alt="relax" class="w-100">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a href="#" class="size-xxm primary-font-normal primary-color text-uppercase text-space-sm">VIEW ALL ROOMS</a>
-                  <hr class="h-line h-line-1">
-                  <!-- slider next, prev button -->
-                  <div class="slider-btn-wrapper d-flex align-items-center">
-                    <button type="button" class="slider-btn swiper-prev me-55">
-                      <img src="assets/images/reuse-image/Left-Arrow.svg" alt="Left-Arrow" class="slider-btn-img">
-                    </button>
-                    <button type="button" class="slider-btn swiper-next">
-                      <img src="assets/images/reuse-image/Right-Arrow.svg" alt="Right-Arrow" class="slider-btn-img">
-                    </button>
-                  </div>
-                </div>
+            <article class="col-lg-6 dine-img-col">
+              <div class="dine-img position-relativ">
+                <img src="assets/images/dining/dine/dine.png" alt="dine" class="img-fluid">
+                <p class="dine-img-title size-xxm primary-font-normal third-color text-uppercase mb-25 text-space-sm">Chef Thomas making delicious magic happen</p>
               </div>
             </article>
           </div>
@@ -510,7 +332,7 @@
       </section>
       <!-- 
 		  =====================================================
-		  End Relax Section 
+		  End Dine Section 
 		  =====================================================
 		  -->
 
@@ -519,16 +341,16 @@
 		  Start Dining Section 
 		  =====================================================
 		  -->
-      <section class="home-dining-section py-90">
+      <section class="dine-dining-section py-80">
         <div class="container">
           <!----- Start row ----->
           <div class="row g-5 flex-row-reverse align-items-center">
             <article class="col-lg-5">
-              <div class="home-dining-text ms-auto">
+              <div class="dine-dining-text ms-auto">
                 <p class="size-xxm primary-font-normal primary-color text-uppercase mb-25 text-space-sm">DINING</p>
                 <div class="mb-50">
-                  <img src="assets/images/home/dining/number.png" alt="number" class="mb-35">
-                  <img src="assets/images/home/dining/text-svg.svg" alt="text-svg">
+                  <img src="assets/images/dining/dining/number.png" alt="number" class="mb-35">
+                  <img src="assets/images/dining/dining/text-svg.svg" alt="text-svg">
                 </div>
                 <p class="size-md primary-font-light four-color mb-55">At 8595, every locally sourced ingredient, dash of spice, and delicate garnish blend seamlessly to put a modern twist on traditional Southern cuisine. The deliciously distinct results stir the soul and harken back to the jubilance and vibrancy of Augusta’s days as our state capital. Experience 8595 – the flavor of Augusta.</p>
                 <div class="d-flex align-items-center flex-wrap">
@@ -538,8 +360,8 @@
               </div>
             </article>
             <article class="col-lg-7">
-              <div class="home-dining-img">
-                <img src="assets/images/home/dining/dining.png" alt="dining" class="w-100">
+              <div class="dine-dining-img">
+                <img src="assets/images/dining/dining/dining.png" alt="dining" class="w-100">
               </div>
             </article>
           </div>
@@ -557,14 +379,14 @@
 		  Start Rooftop Bar Section 
 		  =====================================================
 		  -->
-      <section class="home-rooftop-bar-section py-90">
+      <section class="dine-rooftop-bar-section py-90">
         <div class="container">
           <!----- Start row ----->
           <div class="row g-5 align-items-center">
             <article class="col-lg-5">
-              <div class="home-rooftop-bar-text">
+              <div class="dine-rooftop-bar-text">
                 <p class="size-xxm primary-font-normal primary-color text-uppercase mb-25 text-space-sm">ROOFTOP BAR</p>
-                <img src="assets/images/home/rooftop-bar/six-south-logos.svg" alt="six-south-logos" class="mb-40">
+                <img src="assets/images/dining/rooftop-bar/six-south-logos.svg" alt="six-south-logos" class="mb-40">
                 <p class="size-md primary-font-light four-color mb-55">Situated atop the historic Partridge Inn like a jeweled crown, Six South is a destination within a destination, deserving of its own address. Stunning panoramic views of Downtown Augusta and an inspired menu of cocktails and small plates make gatherings large and small feel like special occasions. Discover Six South and rise above the expected.</p>
                 <div class="d-flex align-items-center justify-content-center flex-wrap">
                   <a href="#" class="btn-bg btn-small me-15">RESERVE NOW</a>
@@ -573,8 +395,8 @@
               </div>
             </article>
             <article class="col-lg-7">
-              <div class="home-rooftop-bar-img">
-                <img src="assets/images/home/rooftop-bar/rooftop-bar.png" alt="rooftop-bar" class="w-100">
+              <div class="dine-rooftop-bar-img">
+                <img src="assets/images/dining/rooftop-bar/rooftop-bar.png" alt="rooftop-bar" class="w-100">
               </div>
             </article>
           </div>
@@ -589,61 +411,41 @@
 
       <!-- 
 		  =====================================================
-		  Start Guests Testimonials Section 
+		  Start Food Menu Item Section 
 		  =====================================================
 		  -->
-      <section class="guests-testimonials-section pt-90">
-        <div class="guests-testimonials-bg-top bg-image-center" style="background-image: url('./assets/images/reuse-image/guests-testimonials/gguests-testimonials-bg-bottom.png');">
-          <div class="guests-testimonials-bg-bottom bg-image-center mx-auto" style="background-image: url('./assets/images/reuse-image/guests-testimonials/guests-testimonials-bg-top.png');">
-            <div class="guests-testimonials-wrapper px-85 py-85">
-              <div class="d-flex align-items-center justify-content-between mb-20">
-                <div class="guests-testimonials-top title">
-                  <p class="size-xxm primary-font-normal primary-color text-uppercase text-space-sm">TESTIMONIALS</p>
-                  <p class="size-lg secondary-font-display-normal secondary-color text-space-md  text-uppercase">FROM OUR GUESTS</p>
-                </div>
-                <img src="assets/images/reuse-image/guests-testimonials/guests-testimonials-logo.png" alt="">
-              </div>
-              <!--=========== start slider ===========-->
-              <div class="guests-testimonials-slider-container mb-90">
-              <div class="guests-testimonials-slider x-hideen">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="guests-testimonials-slider-text">
-                      <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="guests-testimonials-slider-text">
-                      <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="guests-testimonials-slider-text">
-                      <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
-                    </div>
-                  </div>
+      <section class="food-manu-item-section py-90">
+        <div class="container-fluid px-0">
+          <div class="food-manu-item-slider-wrapper xy-hideen position-relative">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide">
+                <div class="food-manu-item-slider slider-overlay">
+                  <img src="assets/images/dining/food-menu-item/food-item1.jpg" alt="food manu item" class="w-100">
+                  <p class="food-manu-item-name size-md primary-font-normal third-color text-uppercase text-space-sm">MENU NAME ITEM</p>
                 </div>
               </div>
-              </div>
-              <!--=========== End slider ===========-->
-              <div class="guests-testimonials-slider-btn-wrapper d-flex justify-content-between align-items-center">
-                <div class="guests-testimonials-slider-bottom-left-text">
-                  <p class="primary-font-light four-color text-uppercase text-space-sm">DEVETRICEC2018</p>
-                  <p class="primary-font-normal size-sm secondary-color text-space-sm">Atlanta, GA</p>
-                </div>
-                <hr class="h-line h-line-1">
-                <!-- slider next, prev button -->
-                <div class="slider-btn-wrapper d-flex align-items-center">
-                  <button type="button" class="slider-btn swiper-prev me-55">
-                    <img src="assets/images/reuse-image/Left-Arrow.svg" alt="Left-Arrow" class="slider-btn-img">
-                  </button>
-                  <button type="button" class="slider-btn swiper-next">
-                    <img src="assets/images/reuse-image/Right-Arrow.svg" alt="Right-Arrow" class="slider-btn-img">
-                  </button>
+              <div class="swiper-slide">
+                <div class="food-manu-item-slider slider-overlay">
+                  <img src="assets/images/dining/food-menu-item/food-item1.jpg" alt="food manu item" class="w-100">
+                  <p class="food-manu-item-name size-md primary-font-normal third-color text-uppercase text-space-sm">MENU NAME ITEM</p>
                 </div>
               </div>
-              <div class="text-center mt-50">
-                <a href="#" class="btn-bg btn-large">MORE FROM TRIPADVISOR</a>
+              <div class="swiper-slide">
+                <div class="food-manu-item-slider slider-overlay">
+                  <img src="assets/images/dining/food-menu-item/food-item1.jpg" alt="food manu item" class="w-100">
+                  <p class="food-manu-item-name size-md primary-font-normal third-color text-uppercase text-space-sm">MENU NAME ITEM</p>
+                </div>
+              </div>
+            </div>
+            <div class="food-manu-item-slider-btn d-flex justify-content-end align-items-center">
+              <!-- slider next, prev button -->
+              <div class="slider-btn-wrapper d-flex align-items-center">
+                <button type="button" class="slider-btn swiper-prev me-55">
+                  <img src="assets/images/reuse-image/Left-Arrow.svg" alt="Left-Arrow" class="slider-btn-white slider-btn-img">
+                </button>
+                <button type="button" class="slider-btn swiper-next">
+                  <img src="assets/images/reuse-image/Right-Arrow.svg" alt="Right-Arrow" class="slider-btn-white slider-btn-img">
+                </button>
               </div>
             </div>
           </div>
@@ -651,11 +453,82 @@
       </section>
       <!-- 
 		  =====================================================
-		  End Guests Testimonials Section 
+		  End Food Menu Item Section 
 		  =====================================================
 		  -->
 
       <!-- 
+		  =====================================================
+		  Start Gallery Section 
+		  =====================================================
+		  -->
+      <section class="dining-gallery-section py-90">
+        <div class="container">
+          <div class="dining-gallery-title mb-70">
+            <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md">GALLERY</p>
+          </div>
+          <!----- Start row ----->
+          <div class="row g-4">
+            <article class="col-md-7">
+              <a href="#" class="dining-gallery-img position-relative d-block">
+                <img src="assets/images/dining/gallery/gallery-item1.jpg" alt="" class="w-100">
+                <p class="dining-gallery-img-name size-xxm primary-font-normal third-color text-uppercase text-space-sm">MENU NAME ITEM</p>
+              </a>
+            </article>
+            <article class="col-md-5">
+              <a href="#" class="dining-gallery-img position-relative d-block">
+                <img src="assets/images/dining/gallery/gallery-item2.jpg" alt="" class="w-100">
+                <p class="dining-gallery-img-name size-xxm primary-font-normal third-color text-uppercase text-space-sm">MENU NAME ITEM</p>
+              </a>
+            </article>
+            <article class="col-md-5">
+              <a href="#" class="dining-gallery-img position-relative d-block">
+                <img src="assets/images/dining/gallery/gallery-item3.jpg" alt="" class="w-100">
+                <p class="dining-gallery-img-name size-xxm primary-font-normal third-color text-uppercase text-space-sm">MENU NAME ITEM</p>
+              </a>
+            </article>
+            <article class="col-md-7">
+              <a href="#" class="dining-gallery-img position-relative d-block">
+                <img src="assets/images/dining/gallery/gallery-item4.jpg" alt="" class="w-100">
+                <p class="dining-gallery-img-name size-xxm primary-font-normal third-color text-uppercase text-space-sm">MENU NAME ITEM</p>
+              </a>
+            </article>
+          </div>
+          <!------ End row ------>
+        </div>
+      </section>
+      <!-- 
+		  =====================================================
+		  End Gallery Section 
+		  =====================================================
+		  -->
+
+      <!-- 
+		  =====================================================
+		  Start Culinary Team Section 
+		  =====================================================
+		  -->
+      <section class="culinary-team-section py-90">
+        <div class="container">
+          <div class="culinary-team-title mb-70">
+            <p class="size-xxm primary-font-normal primary-color text-uppercase text-space-sm">CULINARY TEAM</p>
+            <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md d-table position-relative">SAVOR THE</p>
+          </div>
+          <!----- Start row ----->
+          <div class="row">
+            <article class="col-lg-"></article>
+          </div>
+          <!------ End row ------>
+        </div>
+      </section>
+      <!-- 
+		  =====================================================
+		  End Culinary Team Section 
+		  =====================================================
+		  -->
+
+      
+    <!-- 
 		  =====================================================
 		  Start Newsletter Section 
 		  =====================================================
@@ -862,8 +735,6 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <!-- <script src="assets/js/jquery.vidbacking.min.js"></script> -->
-    <script src="assets/js/jquery.vide.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
