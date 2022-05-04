@@ -186,6 +186,10 @@ Responsive Breakpoint
     line-height: 2.3rem;
   }
 
+  .mobile-menu-contact .mobile-menu-contact-desc .directions-link img {
+    margin-top: -0.4rem;
+  }
+
   .mobile-menu-contact .mobile-menu-contact-desc p,
   .mobile-menu-social1 .mobile-menu-social-item1 :is(span, a) {
     font-size: 1.5rem;
@@ -265,6 +269,10 @@ Responsive Breakpoint
     .menu-link-text {
     font-size: 1.6rem;
     line-height: 2.1rem;
+  }
+
+  .mobile-menu-contact .mobile-menu-contact-desc .directions-link img {
+    margin-top: -0.3rem;
   }
 
   .mobile-menu-contact .mobile-menu-contact-desc p,

@@ -1,10 +1,10 @@
 /* ===== preloader ===== */
-var loader = document.querySelector(".preloader");
-window.addEventListener("load", vanish);
+// var loader = document.querySelector(".preloader");
+// window.addEventListener("load", vanish);
 
-function vanish() {
-  loader.classList.add("disppear");
-}
+// function vanish() {
+//   loader.classList.add("disppear");
+// }
 
 /* ===== all rooms slider ===== */
 var swiper = new Swiper(".rooms-slider", {

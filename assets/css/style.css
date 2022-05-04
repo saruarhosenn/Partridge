@@ -76,17 +76,12 @@ Fonts
 
 /* zapfino */
 @font-face {
-  font-family: "fino-sans-400";
-  src: url("https://use.typekit.net/af/c5d7c7/00000000000000007735af4f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-      format("woff2"),
-    url("https://use.typekit.net/af/c5d7c7/00000000000000007735af4f/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-      format("woff"),
-    url("https://use.typekit.net/af/c5d7c7/00000000000000007735af4f/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-      format("opentype");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: normal;
+  font-family: 'Zapfino-400';
+  src: url('../fonts/Zapfino.woff2') format('woff2'),
+      url('../fonts/Zapfino.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* 
@@ -101,7 +96,7 @@ Variables
   --primary-font-light-italic: "josefin-sans-italic-300";
   --secondary-font-display-normal: "garamond-premier-pro-display-400";
   --secondary-font-normal: "garamond-premier-pro-400";
-  --third-font-normal: "";
+  --third-font-normal: "Zapfino-400";
   /*____________ Font Size ____________*/
   --size-xxl: 20rem;
   --size-xl: 10rem;
@@ -212,6 +207,10 @@ ul,
 hr {
   margin: 0;
   padding: 0;
+}
+
+p {
+  letter-spacing: 0.2rem;
 }
 
 hr {
@@ -444,13 +443,26 @@ Start Reuseble Components
 /*---- Preloader
 -------------------------*/
 .preloader {
-  position: fixed;
+  position: relative;
+  position: fixed !important;
   top: 0;
   left: 0;
   z-index: 9999999;
-  background: var(--third-color);
   width: 100%;
   height: 100vh;
+  background: no-repeat center / cover;;
+}
+
+.preloader::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #455e4f;
+  opacity: 95%;
 }
 
 .preloader-wrapper {
@@ -463,79 +475,14 @@ Start Reuseble Components
   text-align: center;
 }
 
-.preloader-img {
-  width: 5rem;
-  margin: auto;
-  animation: scale 1s infinite linear;
-  -webkit-animation: scale 1s infinite linear;
+.preloader-content {
+  position: relative;
+  z-index: 1;
 }
 
-@-webkit-keyframes scale {
-  0% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-  }
-
-  75% {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-  }
-
-  75% {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
+.preloader-percentage {
+  font-size: 4rem;
+  line-height: 5.5rem;
 }
 
 .disppear {
@@ -672,6 +619,7 @@ Start Reuseble Components
 
 .mobile-menu-contact .mobile-menu-contact-desc .directions-link img {
   width: 0.8rem;
+  margin-top: -0.5rem;
 }
 
 .mobile-menu-contact .mobile-menu-social1 .mobile-menu-social-item1 a:hover {
@@ -840,27 +788,107 @@ Start Reuseble Components
   border-color: var(--third-bg);
 }
 
-/*----- Back to top Btn
----------------------------*/
-#scroll-up-btn {
-  opacity: 0;
-  position: fixed;
-  bottom: 3rem;
-  right: 3rem;
-  z-index: 99;
-  background: var(--primary-bg);
-  width: 4rem;
-  height: 4rem;
+/*---- Check In Section
+----------------------------*/
+
+.check-in-border {
+  border-right: 1px solid #DBD3C6;
 }
 
-#scroll-up-btn img {
-  width: 2rem;
-  height: 2rem;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+.check-in-datepicker .check-in-datepicker-input-box {
+  position: relative;
+}
+
+.check-in-datepicker .check-in-datepicker-input-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 1.2rem;
+  height: 0.7rem;
+  background: url("../images/reuse-image/arrow_down.svg") no-repeat center / 1.2rem 0.7rem;
+  z-index: 1;
+}
+
+.check-in-datepicker .check-in-datepicker-input-box,
+.check-in-datepicker .check-in-datepicker-input-box::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-xxm);
+  color: var(--four-color);
+  background-color: var(--third-bg);
+}
+
+.check-in-datepicker .check-in-datepicker-input-box:focus {
+  background-color: var(--third-bg);
+}
+
+
+/* ---------------- */
+ .languege-select {
+  position: relative !important;
+  background: transparent;
+  font-family:  var(--secondary-font-display-normal);
+  color: var(--secondary-color);
+  font-size: 8rem;
+  font-family: "Poppins 400";
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  border-color: #ffffff;
+  padding: 0;
+}
+
+.languege-select:focus,
+.languege-select:hover {
+  border-color: transparent !important;
+}
+
+.languege-select::after {
+  border: 0;
+  background: url("../images/reuse-image/arrow_down.svg") no-repeat center / 1.2rem 0.7rem;
+  width: 1.2rem;
+  height: 0.7rem;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.languege-select.open:after {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.languege-select ul {
+  top: -604% !important;
+  padding: 5px !important;
+  z-index: 999 !important;
+}
+
+.languege-select ul li {
+  color: #2f2f2f;
+  font-size: 1.6rem;
+  font-family: "Poppins 400";
+}
+
+.check-in-select-data {
+  width: 22.5%;
+}
+
+.check-in-submit {
+  width: 32.5%;
+}
+
+.check-in-submit-btn {
+  max-width: 100% !important;
+  height: 8.6rem !important;
 }
 
 /*---- Guests Testimonials Slider 
@@ -894,8 +922,8 @@ Start Reuseble Components
   padding-right: 6rem;
 }
 
-/*---- Newsletter
----------------------------*/
+/*---- Newsletter Section
+-----------------------------*/
 .newsletter-title .newsletter-form-title {
   font-size: 4rem;
   line-height: 1.3;
@@ -962,6 +990,29 @@ Start Reuseble Components
 
 .footer-bottom-text .footer-bottom-text-link span {
   text-decoration: underline;
+}
+
+/*----- Back to top Btn
+---------------------------*/
+#scroll-up-btn {
+  opacity: 0;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 99;
+  background: var(--primary-bg);
+  width: 4rem;
+  height: 4rem;
+}
+
+#scroll-up-btn img {
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 
 /* 
@@ -1345,7 +1396,7 @@ Food Menu Item Section
 Culinary Team Section 
 ------------------------------
 */
-.culinary-team-title p::after{
+.culinary-team-title p::after {
   content: "South";
   right: -150px;
   position: absolute;
@@ -1569,18 +1620,45 @@ End History Page Style ______________________
 /* 
 =========================================================================
 =========================================================================
-Start Page Style ______________________
+Start Masters Page Style ______________________
 =========================================================================
 =========================================================================
 */
 /*------------- 
- Section
-------------------------------
+Masters Section
+-----------------------------
 */
+.masters-text {
+  max-width: 67.4rem;
+}
+
+.masters-list {
+  list-style: none;
+}
+
+.masters-list .masters-list-item::before {
+  content: "\2022";
+  color: var(--secondary-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-right: 1rem;
+}
+
+.masters-img-col {
+  position: absolute;
+  top: 50%;
+  right: -1.5rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
 /* 
 =========================================================================
 =========================================================================
-End Page Style ______________________
+End Masters Page Style ______________________
 =========================================================================
 =========================================================================
 */
@@ -1588,18 +1666,49 @@ End Page Style ______________________
 /* 
 =========================================================================
 =========================================================================
-Start Page Style ______________________
+Start Contact Page Style ______________________
 =========================================================================
 =========================================================================
 */
 /*------------- 
- Section
+Contact Section
 ------------------------------
 */
+.contact-text {
+  max-width: 64rem;
+}
+
+.contact-form-box .contact-form-input {
+  width: 100%;
+  height: 6.1rem;
+  padding: 0 1rem;
+  background-color: var(--third-bg);
+  border: 1px solid #707070;
+}
+
+.contact-form-box .contact-form-message {
+  height: 25.8rem;
+}
+
+.contact-form-box .contact-form-input,
+.contact-form-box .contact-form-input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-sm);
+  color: var(--four-color);
+}
+
+/*------------- 
+Address Section
+------------------------------
+*/
+.address-info .address-info-text {
+  font-size: 4rem;
+  line-height: 1.3;
+}
 /* 
 =========================================================================
 =========================================================================
-End Page Style ______________________
+End Contact Page Style ______________________
 =========================================================================
 =========================================================================
 */
@@ -1607,18 +1716,54 @@ End Page Style ______________________
 /* 
 =========================================================================
 =========================================================================
-Start Page Style ______________________
+Start Press Page Style ______________________
 =========================================================================
 =========================================================================
 */
 /*------------- 
- Section
+Hero Section
 ------------------------------
 */
+.perss-hero-section {
+  padding: 22.2rem 0 7.5rem;
+}
+
+.perss-hero-text {
+  position: relative;
+  z-index: 11;
+}
+
+.perss-hero-text .perss-hero-text-title {
+  font-size: 6rem;
+  line-height: 1.2;
+}
+
+/*------------- 
+Press Box Section
+------------------------------
+*/
+.press-box-section {
+  padding: 12rem 0;
+}
+
+.perss-content {
+  min-height: 38.7rem;
+  background-color: var(--third-bg);
+  border: 1px solid #707070;
+}
+
+.press-text .press-date-text {
+  color: #a0a5a8;
+}
+
+.press-text .press-title-text {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
 /* 
 =========================================================================
 =========================================================================
-End Page Style ______________________
+EndPress Pagee Style ______________________
 =========================================================================
 =========================================================================
 */
@@ -1626,151 +1771,42 @@ End Page Style ______________________
 /* 
 =========================================================================
 =========================================================================
-Start Page Style ______________________
+Start 404 Page Style ______________________
 =========================================================================
 =========================================================================
 */
 /*------------- 
- Section
+Hero Section
 ------------------------------
 */
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
+.error-hero-section::after {
+  background-color: #000000;
+  opacity: 80%;
+}
 
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
+.error-hero-wrapper {
+  max-width: 81.2rem !important;
+}
 
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
+.error-hero-text .error-hero-text-title {
+  font-size: 48rem;
+  line-height: 0.6;
+}
 
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
+.error-hero-text .error-hero-text-desc {
+  font-size: 3rem;
+  line-height: 1.3;
+}
 
+.error-hero-text .error-hero-btn {
+  max-width: 29rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 /* 
 =========================================================================
 =========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-
-/* 
-=========================================================================
-=========================================================================
-Start Page Style ______________________
-=========================================================================
-=========================================================================
-*/
-/*------------- 
- Section
-------------------------------
-*/
-/* 
-=========================================================================
-=========================================================================
-End Page Style ______________________
+End 404 Page Style ______________________
 =========================================================================
 =========================================================================
 */
