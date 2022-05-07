@@ -489,7 +489,7 @@ Start Reuseble Components
   left: 0;
   width: 100%;
   z-index: 9999;
-  display: none;
+  /* display: none; */
 }
 
 .navBar .header-btn .menu-open-btn {
