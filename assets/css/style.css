@@ -74,16 +74,14 @@ Fonts
   font-stretch: normal;
 }
 
-/* zapfino */
 @font-face {
-  font-family: 'Zapfino-400';
-  src: url('../fonts/Zapfino.woff2') format('woff2'),
-      url('../fonts/Zapfino.woff') format('woff');
+  font-family: "Zapfino-400";
+  src: url("../fonts/Zapfino.woff2") format("woff2"),
+    url("../fonts/Zapfino.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
-
 /* 
 ========================================================
 Variables
@@ -272,30 +270,8 @@ img,
   word-spacing: 0.6rem;
 }
 
-.py-180 {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
-}
-
-.pt-180 {
-  padding-top: 18rem;
-}
-
-.pb-180 {
-  padding-bottom: 18rem;
-}
-
-.py-90 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
-.pt-90 {
-  padding-top: 9rem;
-}
-
-.pb-90 {
-  padding-bottom: 9rem;
+.desc-mb-50 {
+  margin-bottom: 5rem;
 }
 
 .py-160 {
@@ -450,7 +426,7 @@ Start Reuseble Components
   z-index: 9999999;
   width: 100%;
   height: 100vh;
-  background: no-repeat center / cover;;
+  background: no-repeat center / cover;
 }
 
 .preloader::after {
@@ -513,6 +489,7 @@ Start Reuseble Components
   left: 0;
   width: 100%;
   z-index: 9999;
+  display: none;
 }
 
 .navBar .header-btn .menu-open-btn {
@@ -522,7 +499,7 @@ Start Reuseble Components
 /*---- Mobile Menu 
 ------------------------*/
 .navBar .mobile-menu-wrapper {
-  /* display: none; */
+  display: none;
   background: linear-gradient(
       to right,
       rgba(30, 47, 37, 0.9) 60%,
@@ -666,7 +643,6 @@ Start Reuseble Components
 /*---- All Button 
 -----------------------*/
 .btn-bg {
-  padding: 0 2.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -790,9 +766,20 @@ Start Reuseble Components
 
 /*---- Check In Section
 ----------------------------*/
+.check-in-section {
+  padding-bottom: 24rem;
+}
+
+.check-in-wrapper {
+  width: 100%;
+  position: absolute;
+  top: -7.5rem;
+  left: 0;
+  z-index: 999;
+}
 
 .check-in-border {
-  border-right: 1px solid #DBD3C6;
+  border-right: 1px solid #dbd3c6;
 }
 
 .check-in-datepicker .check-in-datepicker-input-box {
@@ -811,7 +798,8 @@ Start Reuseble Components
   -o-transform: translateY(-50%);
   width: 1.2rem;
   height: 0.7rem;
-  background: url("../images/reuse-image/arrow_down.svg") no-repeat center / 1.2rem 0.7rem;
+  background: url("../images/reuse-image/arrow_down.svg") no-repeat center /
+    1.2rem 0.7rem;
   z-index: 1;
 }
 
@@ -827,58 +815,7 @@ Start Reuseble Components
   background-color: var(--third-bg);
 }
 
-
-/* ---------------- */
- .languege-select {
-  position: relative !important;
-  background: transparent;
-  font-family:  var(--secondary-font-display-normal);
-  color: var(--secondary-color);
-  font-size: 8rem;
-  font-family: "Poppins 400";
-  width: 100%;
-  height: 100%;
-  line-height: 45px;
-  border-color: #ffffff;
-  padding: 0;
-}
-
-.languege-select:focus,
-.languege-select:hover {
-  border-color: transparent !important;
-}
-
-.languege-select::after {
-  border: 0;
-  background: url("../images/reuse-image/arrow_down.svg") no-repeat center / 1.2rem 0.7rem;
-  width: 1.2rem;
-  height: 0.7rem;
-  top: 50%;
-  right: 0px;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.languege-select.open:after {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.languege-select ul {
-  top: -604% !important;
-  padding: 5px !important;
-  z-index: 999 !important;
-}
-
-.languege-select ul li {
-  color: #2f2f2f;
-  font-size: 1.6rem;
-  font-family: "Poppins 400";
-}
-
-.check-in-select-data {
+.check-in-select {
   width: 22.5%;
 }
 
@@ -889,6 +826,72 @@ Start Reuseble Components
 .check-in-submit-btn {
   max-width: 100% !important;
   height: 8.6rem !important;
+}
+
+.check-in-main-select {
+  position: relative !important;
+  background: transparent;
+  font-family: var(--secondary-font-display-normal);
+  color: var(--secondary-color);
+  font-size: 8rem;
+  width: 100%;
+  height: 100%;
+  border-color: transparent;
+  padding: 0;
+}
+
+.check-in-main-select:focus,
+.check-in-main-select:hover {
+  border-color: transparent !important;
+}
+
+.check-in-main-select::after {
+  border: 0;
+  background: url("../images/reuse-image/arrow_down.svg") no-repeat center /
+    1.2rem 0.7rem;
+  width: 1.2rem;
+  height: 0.7rem;
+  top: 25%;
+  right: 0px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.check-in-main-select.open:after {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.check-in-main-select ul {
+  width: 8rem;
+  top: 100% !important;
+  padding: 0px !important;
+  z-index: 9999 !important;
+  height: 21rem;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+.check-in-main-select ul li {
+  text-align: left !important;
+  font-family: var(--secondary-font-display-normal);
+  color: var(--secondary-color);
+  font-size: 2rem;
+  padding: 0 8px !important;
+  line-height: 3.5rem !important;
+  min-height: 3.5rem !important;
+}
+
+.check-in-main-select ul li:hover {
+  color: var(--four-color);
+}
+
+.check-in-main-select .option.focus,
+.check-in-main-select .option.selected.focus {
+  color: var(--four-color);
+  font-weight: 400 !important;
 }
 
 /*---- Guests Testimonials Slider 
@@ -903,8 +906,8 @@ Start Reuseble Components
 }
 
 .guests-testimonials-slider-container {
-  padding-left: 19rem;
-  padding-right: 19rem;
+  padding-left: 13rem;
+  padding-right: 15rem;
 }
 
 .guests-testimonials-slider-text p {
@@ -917,9 +920,15 @@ Start Reuseble Components
   line-height: 1.3;
 }
 
+.guests-testimonials-slider-bottom-left hr {
+  margin-right: 0;
+  margin-left: 5rem;
+}
+
 .guests-testimonials-slider-btn-wrapper {
-  padding-left: 19rem;
-  padding-right: 6rem;
+  position: absolute;
+  right: 0;
+  bottom: 5.8rem;
 }
 
 /*---- Newsletter Section
@@ -1062,7 +1071,7 @@ Hero Section
 } */
 
 /*------------- 
-Getaway In Section 
+Getaway Section 
 ------------------------
 */
 .getaway-left .getaway-left-img {
@@ -1082,22 +1091,20 @@ Getaway In Section
   z-index: 99;
 }
 
-.getaway-right .getaway-right-content {
-  max-width: 67.4rem;
-}
-
 .getaway-right .getaway-right-title {
   position: relative;
   font-size: 6rem;
   line-height: 1.1;
+  z-index: 11;
 }
 
-.getaway-right .getaway-right-title::after {
-  content: "Historic";
-  right: -50px;
-  position: absolute;
-  font-size: ver(--size-xl);
-  color: var(--five-color);
+.getaway-right-title-text {
+  margin-top: 2rem;
+  margin-left: -17rem;
+}
+
+.getaway-right .getaway-right-desc {
+  max-width: 67.4rem;
 }
 
 /*------------- 
@@ -1168,6 +1175,7 @@ Relax Section
   position: relative;
   margin-top: -10rem;
   z-index: -1;
+  max-width: 56rem;
 }
 
 .relax-text .relax-text-desc {
@@ -1182,12 +1190,20 @@ Dining Section
   max-width: 55.6rem;
 }
 
+.home-dining-btn a {
+  margin-top: 1.5rem;
+}
+
 /*------------- 
 Rooftop Bar Section  
 ---------------------------
 */
 .home-rooftop-bar-text {
   max-width: 54.6rem;
+}
+
+.home-rooftop-bar-btn a {
+  margin-top: 1.5rem;
 }
 /* 
 =========================================================================
@@ -1208,12 +1224,15 @@ Start Accommodations Page Style ______________________
 Rooms Slider Resuseble Style
 -----------------------------------
 */
-.superior-text-wrapper {
-  max-width: 53.6rem;
+.margin-top-minus {
+  position: relative;
+  margin-top: -2.5rem;
+  margin-left: -1.5rem;
+  z-index: -1;
 }
 
-.rooms-title {
-  margin-top: -2rem;
+.superior-text-wrapper {
+  max-width: 53.6rem;
 }
 
 .rooms-slider-btn {
@@ -1237,17 +1256,8 @@ Rooms Slider Resuseble Style
 Hospitality Section 
 ------------------------------
 */
-.hospitality-text {
+.hospitality-text-desc {
   max-width: 136.4rem;
-}
-
-.hospitality-text-title::after {
-  content: "History";
-  right: -50px;
-  position: absolute;
-  font-size: ver(--size-xl);
-  line-height: 1.1;
-  color: var(--five-color);
 }
 
 /*------------- 
@@ -1310,19 +1320,30 @@ Start Dining Page Style ______________________
 Dine Section
 ------------------------------
 */
+.dine-section {
+  padding: 16rem 0 18rem;
+}
+
 .dine-text {
+  max-width: 62rem;
+}
+
+.dine-text .dine-title {
+  font-size: 18rem;
+  line-height: 1;
+  position: relative;
+  z-index: -1;
+  margin-top: -5rem;
+}
+
+.dine-text .dine-text-desc {
   max-width: 53.6rem;
 }
 
 .dine-img-col {
   position: absolute;
-  top: 50%;
-  right: -1.5rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+  top: 0%;
+  right: -16.5rem;
 }
 
 .dine-img-title {
@@ -1340,12 +1361,8 @@ Dining Section
   max-width: 55.6rem;
 }
 
-/*------------- 
-Dining Section
-------------------------------
-*/
-.dine-dining-text {
-  max-width: 55.6rem;
+.dine-dining-btn a {
+  margin-top: 1.5rem;
 }
 
 /*------------- 
@@ -1356,6 +1373,9 @@ Rooftop Bar Section
   max-width: 54.6rem;
 }
 
+.dine-rooftop-bar-btn a {
+  margin-top: 1.5rem;
+}
 /*------------- 
 Food Menu Item Section
 ------------------------------
@@ -1396,12 +1416,28 @@ Food Menu Item Section
 Culinary Team Section 
 ------------------------------
 */
-.culinary-team-title p::after {
-  content: "South";
-  right: -150px;
+.culinary-team-right-title {
+  margin-top: 4rem;
+  margin-left: -5rem;
+}
+
+.culinary-team-text {
+  width: 90%;
   position: absolute;
-  font-size: ver(--size-xl);
-  color: var(--five-color);
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.culinary-team-name-text {
+  padding-right: 4rem;
+}
+
+.culinary-team-name-text .culinary-team-name-text-title {
+  font-size: 4rem;
+}
+
+.culinary-team-slider-btn hr {
+  margin: 0 !important;
 }
 /* 
 =========================================================================
@@ -1659,6 +1695,121 @@ Masters Section
 =========================================================================
 =========================================================================
 End Masters Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+
+/* 
+=========================================================================
+=========================================================================
+Start Gallert Page Style ______________________
+=========================================================================
+=========================================================================
+*/
+/*------------- 
+Hero Section
+-----------------------------
+*/
+.gallery-page-slider-bottom {
+  height: 7.6rem;
+  margin-top: -2.2rem;
+  position: relative;
+  z-index: 99;
+}
+
+.gallery-page-slider-bottom-border::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 181%;
+  background-color: #b68e4b;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.swiper-slider-pagination,
+.swiper-slider-pagination span {
+  font-family: var(--secondary-font-display-normal);
+  font-size: var(--md);
+  color: var(--secondary-color);
+}
+
+.gallery-page-select {
+  position: relative !important;
+  background: transparent;
+  font-family: var(--primary-font-light);
+  color: var(--secondary-color);
+  font-size: var(--size-md);
+  width: 100%;
+  height: 100%;
+  border-color: transparent;
+  padding: 0;
+}
+
+.gallery-page-select:focus,
+.gallery-page-select:hover {
+  border-color: transparent !important;
+}
+
+.gallery-page-select::after {
+  border: 0;
+  background: url("../images/gallery/hero/arrow_drop_down.svg") no-repeat center /
+    1.2rem 0.7rem;
+  width: 1rem;
+  height: 0.5rem;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.gallery-page-select.open:after {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.gallery-page-select ul {
+  width: 100%;
+  top: 100% !important;
+  padding: 0px !important;
+  z-index: 9999 !important;
+  height: 28rem;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+.gallery-page-select ul li {
+  font-family: var(--primary-font-light);
+  color: var(--secondary-color);
+  font-size: var(--size-sm);
+  padding: 0 8px !important;
+  line-height: 4rem !important;
+  min-height: 4rem !important;
+}
+
+.gallery-page-select ul li:hover {
+  color: var(--four-color);
+}
+
+.gallery-page-select .option.focus,
+.gallery-page-select .option.selected.focus {
+  color: var(--four-color);
+}
+
+.gallery-page-select .current {
+  color: var(--third-color);
+}
+/* 
+=========================================================================
+=========================================================================
+End Gallert Page Style ______________________
 =========================================================================
 =========================================================================
 */

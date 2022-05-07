@@ -21,6 +21,7 @@
     <!------- Css Here ------->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- <link rel="stylesheet" href="assets/css/jquery.vidbacking.min.css" /> -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -307,11 +308,11 @@
           data-vide-options="position: 0% 50%">
         </div>
         <!--====== hero content ======-->
-        <div class="container home-hero-wrapper vh-center mt-50">
+        <div class="container home-hero-wrapper vh-center mt-20">
           <div class="home-hero-text text-center">
-            <p class="third-font-normal size-lg third-color">Welcome to</p>
+            <p class="third-font-normal size-xl third-color">Welcome to</p>
             <p class="home-hero-text-title secondary-font-display-normal third-color text-uppercase text-space-md ">THE PARTRIDGE INN</p>
-            <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo">
+            <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo" class="hero-logo">
           </div>
         </div>
       </section>
@@ -327,23 +328,23 @@
 		  =====================================================
 		  -->
       <section class="check-in-section">
-        <div class="container">
+        <div class="container position-relative">
           <!----- Start row ----->
-          <div class="px-30 py-30 shadow">
+          <div class="check-in-wrapper px-30 py-30 shadow third-bg">
             <form class="row g-0">
-              <article class="col-lg-5">
+              <article class="col-xxl-5 col-lg-4 col-md-6">
                 <div class="row g-0 h-100">
                   <div class="col-6 check-in-border">
-                    <div class="check-in-datepicker pe-40">
-                      <p class="mb-20 primary-font-normal size-ssm four-color text-space-sm text-uppercase">CHECK IN</p>
+                    <div class="check-in-datepicker check-in-datepicker1 pe-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">CHECK IN</p>
                       <div class="check-in-datepicker-input-box">
                         <input type="text" name="check-in-datepicker" value="" class="check-in-datepicker-input w-100" />
                       </div>
                     </div>
                   </div>
                   <div class="col-6 check-in-border">
-                    <div class="check-in-datepicker px-40">
-                      <p class="mb-20 primary-font-normal size-ssm four-color text-space-sm text-uppercase">CHECK OUT</p>
+                    <div class="check-in-datepicker check-in-datepicker2 px-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">CHECK OUT</p>
                       <div class="check-in-datepicker-input-box">
                         <input type="text" name="check-in-datepicker" value="" class="check-in-datepicker-input w-100" />
                       </div>
@@ -351,12 +352,12 @@
                   </div>
                 </div>
               </article>
-              <article class="col-lg-7">
-                <div class="row g-0 align-items-center">
-                  <div class="check-in-select-data check-in-border">
-                    <div class="px-40">
-                      <p class="mb-20 primary-font-normal size-ssm four-color text-space-sm text-uppercase">ROOMS</p>
-                      <select class="languege-select">
+              <article class="col-xxl-7 col-lg-8 col-md-6">
+                <div class="row g-0">
+                  <div class="check-in-select check-in-border">
+                    <div class="check-in-select-data check-in-select-data1 px-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">ROOMS</p>
+                      <select class="check-in-main-select">
                         <option data-display="1">
                           1
                         </option>
@@ -365,13 +366,17 @@
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
                       </select>
                     </div>
                   </div>
-                  <div class="check-in-select-data check-in-border">
-                    <div class="px-40">
-                      <p class="mb-20 primary-font-normal size-ssm four-color text-space-sm text-uppercase">ADULTS</p>
-                      <select class="languege-select">
+                  <div class="check-in-select check-in-border">
+                    <div class="check-in-select-data px-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">ADULTS</p>
+                      <select class="check-in-main-select">
                         <option data-display="1">
                           1
                         </option>
@@ -380,26 +385,34 @@
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
                       </select>
                     </div>
                   </div>
-                  <div class="check-in-select-data check-in-border">
-                    <div class="px-40">
-                      <p class="mb-20 primary-font-normal size-ssm four-color text-space-sm text-uppercase">CHILDREN</p>
-                      <select class="languege-select">
-                        <option data-display="1">
-                          1
+                  <div class="check-in-select check-in-border">
+                    <div class="check-in-select-data px-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">CHILDREN</p>
+                      <select class="check-in-main-select">
+                        <option data-display="0">
+                          0
                         </option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
                       </select>
                     </div>
                   </div>
-                  <div class="check-in-submit ps-40">
-                    <div class="">
+                  <div class="check-in-submit">
+                    <div class="check-in-submit-box ps-40">
                       <input type="submit" value="RESERVE NOW" class="btn-bg btn-medium check-in-submit-btn">
                     </div>
                   </div>
@@ -416,25 +429,29 @@
 		  =====================================================
 		  -->
 
+
       <!-- 
 		  =====================================================
 		  Start Getaway Section 
 		  =====================================================
 		  -->
-      <section class="getaway-section position-relative py-180">
-        <div class="container px-0">
+      <section class="getaway-section position-relative">
+        <div class="container">
           <!----- Start row ----->
           <div class="row g-0">
-            <article class="col-lg-7">
+            <article class="col-xl-7">
               <div class="getaway-left">
                 <img src="assets/images/home/getaway/getaway.png" alt="getaway" class="getaway-left-img">
               </div>
             </article>
-            <article class="col-lg-6 getaway-right-col four-bg">
+            <article class="col-xl-6 getaway-right-col four-bg">
               <div class="getaway-right four-bg px-80 py-80">
                 <div class="getaway-right-content">
-                  <p class="getaway-right-title secondary-font-display-normal four-color d-table mb-35">Make Your Getaway</p>
-                  <p class="primary-font-light size-md four-color mb-35">Part of the Curio Collection by Hilton, the Partridge Inn in Augusta, Georgia, stands tall, with more distinction, class, and grandeur than it ever has before. Previous guests will see plenty of familiar faces, delivering the same world-class service we’re known for, but with the unmistakable energy that comes from the inn’s new beginning. Experience it for yourself by booking one of more than 140 unique rooms and suites. </p>
+                  <div class="getaway-right-main-content d-flex align-items-center mb-35">
+                    <p class="getaway-right-title secondary-font-display-normal four-color d-table">Make Your Getaway</p>
+                    <p class="getaway-right-title-text third-font-normal size-xl five-color">Historic</p>
+                  </div>
+                  <p class="getaway-right-desc primary-font-light size-md four-color mb-35">Part of the Curio Collection by Hilton, the Partridge Inn in Augusta, Georgia, stands tall, with more distinction, class, and grandeur than it ever has before. Previous guests will see plenty of familiar faces, delivering the same world-class service we’re known for, but with the unmistakable energy that comes from the inn’s new beginning. Experience it for yourself by booking one of more than 140 unique rooms and suites. </p>
                   <a href="#" class="btn-bg btn-medium">RESERVE NOW</a>
                 </div>
               </div>
@@ -454,11 +471,11 @@
 		  Start Gallery Section 
 		  =====================================================
 		  -->
-      <section class="home-gallery-section pb-90">
+      <section class="home-gallery-section pt-160 pb-80">
         <div class="container">
           <!----- Start row ----->
           <div class="row g-4">
-            <article class="col-lg-8">
+            <article class="col-xl-8 col-lg-7 col-md-6">
               <a href="#" class="home-gallery d-block position-relative">
                 <div class="home-gallery-img">
                   <img src="assets/images/home/gallery/gallery1.png" alt="gallery" class="w-100">
@@ -468,7 +485,7 @@
                 </div>
               </a>
             </article>
-            <article class="col-lg-4">
+            <article class="col-xl-4 col-lg-5 col-md-6">
               <a href="#" class="home-gallery d-block position-relative">
                 <div class="home-gallery-img">
                   <img src="assets/images/home/gallery/gallery2.png" alt="gallery" class="w-100">
@@ -478,7 +495,7 @@
                 </div>
               </a>
             </article>
-            <article class="col-lg-4">
+            <article class="col-xl-4 col-lg-5 col-md-6">
               <a href="#" class="home-gallery d-block position-relative">
                 <div class="home-gallery-img">
                   <img src="assets/images/home/gallery/gallery3.png" alt="gallery" class="w-100">
@@ -489,7 +506,7 @@
                 </div>
               </a>
             </article>
-            <article class="col-lg-8">
+            <article class="col-xl-8 col-lg-7 col-md-6">
               <a href="#" class="home-gallery d-block position-relative">
                 <div class="home-gallery-img">
                   <img src="assets/images/home/gallery/gallery4.png" alt="gallery" class="w-100">
@@ -514,7 +531,7 @@
 		  Start Only BG Section 
 		  =====================================================
 		  -->
-      <section class="only-bg-section py-90">
+      <section class="only-bg-section py-80">
         <div class="container-fluid px-0">
           <img src="assets/images/home/home-bg-section-bg.png" alt="bg" class="only-bg-img w-100">
         </div>
@@ -530,7 +547,7 @@
 		  Start Relax Section 
 		  =====================================================
 		  -->
-      <section class="relax-section py-90">
+      <section class="relax-section py-80">
         <div class="container">
           <!----- Start row ----->
           <div class="row g-5 align-items-center">
@@ -565,12 +582,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="relax-slider-btn-area d-flex justify-content-between align-items-center">
                   <a href="#" class="size-xxm primary-font-normal primary-color text-uppercase text-space-sm">VIEW ALL ROOMS</a>
                   <hr class="h-line h-line-1">
                   <!-- slider next, prev button -->
                   <div class="slider-btn-wrapper d-flex align-items-center">
-                    <button type="button" class="slider-btn swiper-prev me-55">
+                    <button type="button" class="slider-btn slider-btn1 swiper-prev me-55">
                       <img src="assets/images/reuse-image/Left-Arrow.svg" alt="Left-Arrow" class="slider-btn-img">
                     </button>
                     <button type="button" class="slider-btn swiper-next">
@@ -595,7 +612,7 @@
 		  Start Dining Section 
 		  =====================================================
 		  -->
-      <section class="home-dining-section py-90">
+      <section class="home-dining-section py-80">
         <div class="container">
           <!----- Start row ----->
           <div class="row g-5 flex-row-reverse align-items-center">
@@ -603,11 +620,15 @@
               <div class="home-dining-text ms-auto">
                 <p class="size-xxm primary-font-normal primary-color text-uppercase mb-25 text-space-sm">DINING</p>
                 <div class="mb-50">
-                  <img src="assets/images/home/dining/number.png" alt="number" class="mb-35">
-                  <img src="assets/images/home/dining/text-svg.svg" alt="text-svg">
+                  <div class="home-dining-text-img1 mb-35">
+                    <img src="assets/images/home/dining/number.png" alt="number" class="">
+                  </div>
+                  <div class="home-dining-text-img2 mb-50">
+                    <img src="assets/images/home/dining/text-svg.svg" alt="text-svg">
+                  </div>
                 </div>
-                <p class="size-md primary-font-light four-color mb-55">At 8595, every locally sourced ingredient, dash of spice, and delicate garnish blend seamlessly to put a modern twist on traditional Southern cuisine. The deliciously distinct results stir the soul and harken back to the jubilance and vibrancy of Augusta’s days as our state capital. Experience 8595 – the flavor of Augusta.</p>
-                <div class="d-flex align-items-center flex-wrap">
+                <p class="home-dining-text-desc size-md primary-font-light four-color mb-45">At 8595, every locally sourced ingredient, dash of spice, and delicate garnish blend seamlessly to put a modern twist on traditional Southern cuisine. The deliciously distinct results stir the soul and harken back to the jubilance and vibrancy of Augusta’s days as our state capital. Experience 8595 – the flavor of Augusta.</p>
+                <div class="home-dining-btn d-flex align-items-center flex-wrap">
                   <a href="#" class="btn-bg btn-small me-15">RESERVE NOW</a>
                   <a href="#" class="btn-bg btn-small">VIEW MENU</a>
                 </div>
@@ -633,16 +654,16 @@
 		  Start Rooftop Bar Section 
 		  =====================================================
 		  -->
-      <section class="home-rooftop-bar-section py-90">
+      <section class="home-rooftop-bar-section py-80">
         <div class="container">
           <!----- Start row ----->
           <div class="row g-5 align-items-center">
             <article class="col-lg-5">
               <div class="home-rooftop-bar-text">
                 <p class="size-xxm primary-font-normal primary-color text-uppercase mb-25 text-space-sm">ROOFTOP BAR</p>
-                <img src="assets/images/home/rooftop-bar/six-south-logos.svg" alt="six-south-logos" class="mb-40">
-                <p class="size-md primary-font-light four-color mb-55">Situated atop the historic Partridge Inn like a jeweled crown, Six South is a destination within a destination, deserving of its own address. Stunning panoramic views of Downtown Augusta and an inspired menu of cocktails and small plates make gatherings large and small feel like special occasions. Discover Six South and rise above the expected.</p>
-                <div class="d-flex align-items-center justify-content-center flex-wrap">
+                <img src="assets/images/home/rooftop-bar/six-south-logos.svg" alt="six-south-logos" class="home-rooftop-bar-text-img mb-40">
+                <p class="home-rooftop-bar-text-desc size-md primary-font-light four-color mb-45">Situated atop the historic Partridge Inn like a jeweled crown, Six South is a destination within a destination, deserving of its own address. Stunning panoramic views of Downtown Augusta and an inspired menu of cocktails and small plates make gatherings large and small feel like special occasions. Discover Six South and rise above the expected.</p>
+                <div class="home-rooftop-bar-btn d-flex align-items-center flex-wrap">
                   <a href="#" class="btn-bg btn-small me-15">RESERVE NOW</a>
                   <a href="#" class="btn-bg btn-small">VIEW MENU</a>
                 </div>
@@ -668,49 +689,63 @@
 		  Start Guests Testimonials Section 
 		  =====================================================
 		  -->
-      <section class="guests-testimonials-section pt-90">
+      <section class="guests-testimonials-section">
         <div class="guests-testimonials-bg-top bg-image-center" style="background-image: url('./assets/images/reuse-image/guests-testimonials/gguests-testimonials-bg-bottom.png');">
           <div class="guests-testimonials-bg-bottom bg-image-center mx-auto" style="background-image: url('./assets/images/reuse-image/guests-testimonials/guests-testimonials-bg-top.png');">
-            <div class="guests-testimonials-wrapper px-85 py-85">
-              <div class="d-flex align-items-center justify-content-between mb-20">
+            <div class="guests-testimonials-wrapper shadow px-85 py-85">
+              <div class="d-sm-flex align-items-center justify-content-between mb-20">
                 <div class="guests-testimonials-top title">
                   <p class="size-xxm primary-font-normal primary-color text-uppercase text-space-sm">TESTIMONIALS</p>
                   <p class="size-lg secondary-font-display-normal secondary-color text-space-md  text-uppercase">FROM OUR GUESTS</p>
                 </div>
-                <img src="assets/images/reuse-image/guests-testimonials/guests-testimonials-logo.png" alt="">
+                <img src="assets/images/reuse-image/guests-testimonials/guests-testimonials-logo.svg" alt="logo" class="guests-testimonials-logo">
               </div>
               <!--=========== start slider ===========-->
-              <div class="guests-testimonials-slider-container mb-90">
-              <div class="guests-testimonials-slider x-hideen">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="guests-testimonials-slider-text">
-                      <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
+              <div class="guests-testimonials-slider-container position-relative mt-50">
+                <div class="guests-testimonials-slider x-hideen">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="guests-testimonials-slider-text">
+                        <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
+                        <div class="guests-testimonials-slider-bottom-left d-flex align-items-center mt-100">
+                          <div class="guests-testimonials-slider-bottom-left-text">
+                            <p class="primary-font-light four-color text-uppercase text-space-sm">DEVETRICEC2018</p>
+                            <p class="primary-font-normal size-sm secondary-color text-space-sm">Atlanta, GA</p>
+                          </div>
+                          <hr class="h-line h-line-1 d-none d-sm-block">
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="guests-testimonials-slider-text">
-                      <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
+                    <div class="swiper-slide">
+                      <div class="guests-testimonials-slider-text">
+                        <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
+                        <div class="guests-testimonials-slider-bottom-left d-flex align-items-center mt-100">
+                          <div class="guests-testimonials-slider-bottom-left-text">
+                            <p class="primary-font-light four-color text-uppercase text-space-sm">DEVETRICEC2018</p>
+                            <p class="primary-font-normal size-sm secondary-color text-space-sm">Atlanta, GA</p>
+                          </div>
+                          <hr class="h-line h-line-1 d-none d-sm-block">
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="guests-testimonials-slider-text">
-                      <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
+                    <div class="swiper-slide">
+                      <div class="guests-testimonials-slider-text">
+                        <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
+                        <div class="guests-testimonials-slider-bottom-left d-flex align-items-center mt-100">
+                          <div class="guests-testimonials-slider-bottom-left-text">
+                            <p class="primary-font-light four-color text-uppercase text-space-sm">DEVETRICEC2018</p>
+                            <p class="primary-font-normal size-sm secondary-color text-space-sm">Atlanta, GA</p>
+                          </div>
+                          <hr class="h-line h-line-1 d-none d-sm-block">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              </div>
-              <!--=========== End slider ===========-->
-              <div class="guests-testimonials-slider-btn-wrapper d-flex justify-content-between align-items-center">
-                <div class="guests-testimonials-slider-bottom-left-text">
-                  <p class="primary-font-light four-color text-uppercase text-space-sm">DEVETRICEC2018</p>
-                  <p class="primary-font-normal size-sm secondary-color text-space-sm">Atlanta, GA</p>
-                </div>
-                <hr class="h-line h-line-1">
                 <!-- slider next, prev button -->
-                <div class="slider-btn-wrapper d-flex align-items-center">
-                  <button type="button" class="slider-btn swiper-prev me-55">
+                <div class="guests-testimonials-slider-btn-wrapper slider-btn-wrapper d-flex align-items-center">
+                  <hr class="h-line h-line-1 d-block d-sm-none">
+                  <button type="button" class="slider-btn slider-btn1 swiper-prev me-55">
                     <img src="assets/images/reuse-image/Left-Arrow.svg" alt="Left-Arrow" class="slider-btn-img">
                   </button>
                   <button type="button" class="slider-btn swiper-next">
@@ -718,7 +753,8 @@
                   </button>
                 </div>
               </div>
-              <div class="text-center mt-50">
+              <!--=========== End slider ===========-->
+              <div class="text-center mt-15">
                 <a href="#" class="btn-bg btn-large">MORE FROM TRIPADVISOR</a>
               </div>
             </div>
@@ -736,7 +772,7 @@
 		  Start Newsletter Section 
 		  =====================================================
 		  -->
-      <section class="newsletter-section primary-bg py-90">
+      <section class="newsletter-section primary-bg py-80">
         <div class="container">
             <div class="newsletter-title text-center">
               <p class="newsletter-form-title position-relative primary-font-normal third-color">Stay “Inn the Know” with our newsletter <img src="assets/images/reuse-image/arrow-up.svg" alt="arrow"></p>
@@ -936,9 +972,8 @@
 
     <!--------- jS Here --------->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script type="text/javascript" src="assets/js/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/daterangepicker.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>

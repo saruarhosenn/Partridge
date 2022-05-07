@@ -4,37 +4,9 @@ Variables
 ========================================================
 */
 :root {
-  /*___________ Font Family ___________*/
-  --primary-font-normal: "josefin-sans-400";
-  --primary-font-light: "josefin-sans-300";
-  --primary-font-light-italic: "josefin-sans-italic-300";
-  --secondary-font-display-normal: "garamond-premier-pro-display-400";
-  --secondary-font-normal: "garamond-premier-pro-400";
-  --third-font-normal: "";
-  /*____________ Font Size ____________*/
   --size-xxl: 20rem;
   --size-xl: 10rem;
   --size-lg: 8rem;
-  --size-md: 2rem;
-  --size-sm: 1.6rem;
-  --size-xxm: 1.4rem;
-  /*____________ Text Color ____________*/
-  --primary-color: #656565;
-  --secondary-color: #b68e4b;
-  --third-color: #ffffff;
-  --four-color: #262626;
-  --five-color: #DCD3C5;
-  /*__________ Body BG Color __________*/
-  --body-bg: #ffffff;
-  /*_____________ BG Color _____________*/
-  --primary-bg: #455e4f;
-  --secondary-bg: #efefef;
-  --third-bg: #ffffff;
-  --four-bg: #F5F3EF;
-  /*___________ BTN BG Color ___________*/
-  --btn-bg: #b68e4b;
-  --btn-hover-bg: #455e4f;
-  /*___________ Overlay Color ___________*/
 }
 
 

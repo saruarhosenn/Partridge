@@ -23,7 +23,7 @@ var swiper = new Swiper(".rooms-slider", {
   },
 });
 
-/* ===== guests testimonials slider ===== */
+/* ===== guests section testimonials slider ===== */
 var swiper = new Swiper(".guests-testimonials-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -44,6 +44,23 @@ var swiper = new Swiper(".guests-testimonials-slider", {
 var swiper = new Swiper(".food-manu-item-slider-wrapper", {
   slidesPerView: 1,
   spaceBetween: 0,
+  loop: true,
+  speed: 2000,
+  grabCursor: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+});
+
+/* ===== dining page culinary team slider ===== */
+var swiper = new Swiper(".culinary-team-slider", {
+  slidesPerView: 1,
+  spaceBetween: 15,
   loop: true,
   speed: 2000,
   grabCursor: true,
@@ -122,6 +139,27 @@ var swiper = new Swiper(".brides-testimonials-slider-wrapper", {
   navigation: {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev",
+  },
+});
+
+/* ===== gallery page hero slider ===== */
+var swiper = new Swiper(".gallery-hero-slider-wrapper", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  speed: 2000,
+  grabCursor: false,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+  pagination: {
+    el: '.swiper-slider-pagination',
+    type: 'fraction',
   },
 });
 

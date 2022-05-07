@@ -19,6 +19,8 @@
       href="assets/images/reuse-image/header/header-logo.svg"
     />
     <!------- Css Here ------->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
@@ -287,12 +289,105 @@
 		  Start Hero Section 
 		  =====================================================
 	  	-->
-      <section class="gallery-hero-section min-height-100vh position-relative bg-overlay bg-overlay1 bg-image-center" style="background-image: url('./assets/images/gallery/hero/gallery-hero-bg.png');">
-        <!--====== hero content ======-->
-        <div class="container gallery-hero-wrapper vh-center mt-50">
-          <div class="gallery-hero-text text-center">
-            <p class="gallery-hero-text-title secondary-font-display-normal size-xxl third-color text-uppercase text-space-md position-relative">gallery</p>
-            <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo">
+      <section class="gallery-hero-section">
+        <div class="gallery-hero-slider-wrapper xy-hideen">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="gallery-hero-section min-height-100vh position-relative bg-overlay bg-overlay1 bg-image-center" style="background-image: url('./assets/images/gallery/hero/gallery-hero-bg.png');">
+                <!--====== hero content ======-->
+                <div class="container gallery-hero-wrapper vh-center mt-50">
+                  <div class="gallery-hero-text text-center">
+                    <p class="gallery-hero-text-title secondary-font-display-normal size-xxl third-color text-uppercase text-space-md position-relative">gallery</p>
+                    <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gallery-hero-section min-height-100vh position-relative bg-overlay bg-overlay1 bg-image-center" style="background-image: url('./assets/images/gallery/hero/gallery-hero-bg.png');">
+                <!--====== hero content ======-->
+                <div class="container gallery-hero-wrapper vh-center mt-50">
+                  <div class="gallery-hero-text text-center">
+                    <p class="gallery-hero-text-title secondary-font-display-normal size-xxl third-color text-uppercase text-space-md position-relative">gallery</p>
+                    <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gallery-hero-section min-height-100vh position-relative bg-overlay bg-overlay1 bg-image-center" style="background-image: url('./assets/images/gallery/hero/gallery-hero-bg.png');">
+                <!--====== hero content ======-->
+                <div class="container gallery-hero-wrapper vh-center mt-50">
+                  <div class="gallery-hero-text text-center">
+                    <p class="gallery-hero-text-title secondary-font-display-normal size-xxl third-color text-uppercase text-space-md position-relative">gallery</p>
+                    <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gallery-hero-section min-height-100vh position-relative bg-overlay bg-overlay1 bg-image-center" style="background-image: url('./assets/images/gallery/hero/gallery-hero-bg.png');">
+                <!--====== hero content ======-->
+                <div class="container gallery-hero-wrapper vh-center mt-50">
+                  <div class="gallery-hero-text text-center">
+                    <p class="gallery-hero-text-title secondary-font-display-normal size-xxl third-color text-uppercase text-space-md position-relative">gallery</p>
+                    <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gallery-hero-section min-height-100vh position-relative bg-overlay bg-overlay1 bg-image-center" style="background-image: url('./assets/images/gallery/hero/gallery-hero-bg.png');">
+                <!--====== hero content ======-->
+                <div class="container gallery-hero-wrapper vh-center mt-50">
+                  <div class="gallery-hero-text text-center">
+                    <p class="gallery-hero-text-title secondary-font-display-normal size-xxl third-color text-uppercase text-space-md position-relative">gallery</p>
+                    <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-page-slider-bottom primary-bg d-flex align-items-center">
+          <div class="container">
+            <div class="row g-0 align-items-center">
+              <div class="col-lg-4 gallery-page-slider-bottom-border position-relative">
+                <div class="d-flex align-items-center pe-30">
+                  <p class="primary-font-normal size-xxm third-color text-uppercase text-space-sm">Gallery: </p>
+                  <select class="gallery-page-select">
+                    <option data-display="Partridge Inn">
+                      Partridge Inn
+                    </option>
+                    <option value="1">Rooms</option>
+                    <option value="2">8595</option>
+                    <option value="3">Six South</option>
+                    <option value="4">Pools</option>
+                    <option value="5">Meetings & Events</option>
+                    <option value="6">Weddings</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="d-flex align-items-center justify-content-between ms-30">
+                  <!-- pagination -->
+                  <ul class="d-flex align-items-center">
+                    <li class="swiper-slider-pagination me-20"></li>
+                    <li class="primary-font-normal size-xxm third-color text-space-sm text-uppercase">Pool</span>
+                  </ul>
+                  <!-- slider next, prev button -->
+                  <div class="slider-btn-wrapper d-flex align-items-center">
+                    <span class="me-45 primary-font-normal size-xxm secondary-color text-space-sm text-uppercase">Next</span>
+                    <button type="button" class="slider-btn swiper-prev me-55">
+                      <img src="assets/images/reuse-image/Left-Arrow.svg" alt="Left-Arrow" class="slider-btn-img">
+                    </button>
+                    <button type="button" class="slider-btn swiper-next">
+                      <img src="assets/images/reuse-image/Right-Arrow.svg" alt="Right-Arrow" class="slider-btn-img">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -546,6 +641,8 @@
     <!--------- jS Here --------->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

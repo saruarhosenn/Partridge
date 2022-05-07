@@ -20,6 +20,8 @@
     />
     <!------- Css Here ------->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
@@ -290,7 +292,7 @@
 	  	-->
       <section class="accommodations-hero-section min-height-100vh position-relative bg-overlay bg-overlay1 bg-image-top" style="background-image: url('./assets/images/accommodations/hero/accommodations-hero-bg.png');">
         <!--====== hero content ======-->
-        <div class="container accommodations-hero-wrapper vh-center mt-50">
+        <div class="container accommodations-hero-wrapper vh-center mt-20">
           <div class="accommodations-hero-text text-center">
             <p class="accommodations-hero-text-title secondary-font-display-normal size-xxl third-color text-uppercase text-space-md ">STAY</p>
             <img src="assets/images/reuse-image/hero-logo.svg" alt="hero-logo">
@@ -303,20 +305,134 @@
 			=====================================================
 		  -->
 
+
+      <!-- 
+		  =====================================================
+		  Start Check In Section 
+		  =====================================================
+		  -->
+      <section class="check-in-section">
+        <div class="container position-relative">
+          <!----- Start row ----->
+          <div class="check-in-wrapper px-30 py-30 shadow third-bg">
+            <form class="row g-0">
+              <article class="col-xxl-5 col-lg-4 col-md-6">
+                <div class="row g-0 h-100">
+                  <div class="col-6 check-in-border">
+                    <div class="check-in-datepicker check-in-datepicker1 pe-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">CHECK IN</p>
+                      <div class="check-in-datepicker-input-box">
+                        <input type="text" name="check-in-datepicker" value="" class="check-in-datepicker-input w-100" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 check-in-border">
+                    <div class="check-in-datepicker check-in-datepicker2 px-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">CHECK OUT</p>
+                      <div class="check-in-datepicker-input-box">
+                        <input type="text" name="check-in-datepicker" value="" class="check-in-datepicker-input w-100" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="col-xxl-7 col-lg-8 col-md-6">
+                <div class="row g-0">
+                  <div class="check-in-select check-in-border">
+                    <div class="check-in-select-data check-in-select-data1 px-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">ROOMS</p>
+                      <select class="check-in-main-select">
+                        <option data-display="1">
+                          1
+                        </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="check-in-select check-in-border">
+                    <div class="check-in-select-data px-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">ADULTS</p>
+                      <select class="check-in-main-select">
+                        <option data-display="1">
+                          1
+                        </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="check-in-select check-in-border">
+                    <div class="check-in-select-data px-40">
+                      <p class="mb-20 primary-font-normal size-sm four-color text-space-sm text-uppercase">CHILDREN</p>
+                      <select class="check-in-main-select">
+                        <option data-display="0">
+                          0
+                        </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="check-in-submit">
+                    <div class="check-in-submit-box ps-40">
+                      <input type="submit" value="RESERVE NOW" class="btn-bg btn-medium check-in-submit-btn">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </form>
+          </div>
+          <!------ End row ------>
+        </div>
+      </section>
+      <!-- 
+		  =====================================================
+		  End Check In Section 
+		  =====================================================
+		  -->
+
+
       <!-- 
 		  =====================================================
 		  Start Hospitality Section 
 		  =====================================================
 		  -->
-      <section class="hospitality-section pt-180 pb-90">
+      <section class="hospitality-section pb-80">
         <div class="container">
           <div class="hospitality-text mx-auto">
             <p class="size-xxm primary-font-normal primary-color text-uppercase text-space-sm">ROOMS</p>
-            <p class="hospitality-text-title mb-25 size-lg secondary-font-display-normal secondary-color text-uppercase d-table position-relative text-space-md ">HOSPITALITY WITH</p>
-            <p class="relax-text-desc size-md primary-font-light four-color mb-20">When you book a stay at The Partridge Inn, you can always expect a unique experience. We are a registered historic hotel in Augusta, Georgia, featuring 143 distinct guest rooms with updated amenities and the perfect combination of historic charm and modern luxury.</p>
-            <p class="relax-text-desc size-md primary-font-light four-color mb-20">As a distinguished member of Hilton’s Curio Collection, we offer an unmatched level of service and quality that is guaranteed to exceed your expectations. Our guest rooms feature plush bedding, high-speed Wi-Fi, functional workspaces, and spa-like bathrooms. Additionally, many of our guest rooms also include private balconies or patios where you can pause and just soak in the experience.
-            </p>
-            <p class="relax-text-desc size-md primary-font-light four-color">Come experience the Southern hospitality that has made us Augusta’s most beloved hotel for over a century!</p>
+            <div class="d-md-flex align-items-center">
+              <p class="hospitality-text-left-title mb-25 size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md ">HOSPITALITY WITH</p>
+              <p class="hospitality-text-right-title third-font-normal size-xl five-color mb-3 mb-md-0">History</p>
+            </div>
+            <div class="hospitality-text-desc">
+              <p class="relax-text-desc size-md primary-font-light four-color mb-20">When you book a stay at The Partridge Inn, you can always expect a unique experience. We are a registered historic hotel in Augusta, Georgia, featuring 143 distinct guest rooms with updated amenities and the perfect combination of historic charm and modern luxury.</p>
+              <p class="relax-text-desc size-md primary-font-light four-color mb-20">As a distinguished member of Hilton’s Curio Collection, we offer an unmatched level of service and quality that is guaranteed to exceed your expectations. Our guest rooms feature plush bedding, high-speed Wi-Fi, functional workspaces, and spa-like bathrooms. Additionally, many of our guest rooms also include private balconies or patios where you can pause and just soak in the experience.
+              </p>
+              <p class="relax-text-desc size-md primary-font-light four-color">Come experience the Southern hospitality that has made us Augusta’s most beloved hotel for over a century!</p>
+            </div>
           </div>
         </div>
       </section>
@@ -331,15 +447,15 @@
 		  Start Superior Rooms Section 
 		  =====================================================
 		  -->
-      <section class="superior-rooms-section py-90">
+      <section class="superior-rooms-section py-80">
         <div class="container">
           <!----- Start row ----->
           <div class="row align-items-center">
             <article class="col-lg-5">
               <div class="superior-rooms-text superior-text-wrapper">
                 <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md ">SUPERIOR 1</p>
-                <p class="rooms-title size-xl five-color">Rooms</p>
-                <p class="size-md primary-font-light four-color mt-10 mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
+                <p class="rooms-title margin-top-minus third-font-normal size-xl five-color">Rooms</p>
+                <p class="size-md primary-font-light four-color mt-40 desc-mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
                 <a href="#" class="btn-bg btn-medium">VIEW DETAILS</a>
               </div>
             </article>
@@ -393,15 +509,15 @@
 		  Start Superior Balcony Section 
 		  =====================================================
 		  -->
-      <section class="superior-balcony-section py-90">
+      <section class="superior-balcony-section py-80">
         <div class="container">
           <!----- Start row ----->
           <div class="row flex-row-reverse align-items-center">
             <article class="col-lg-5">
               <div class="superior-balcony-text superior-text-wrapper ms-auto">
                 <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md ">SUPERIOR 1 BALCONY</p>
-                <p class="rooms-title size-xl five-color">Rooms</p>
-                <p class="size-md primary-font-light four-color mt-10 mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
+                <p class="rooms-title margin-top-minus third-font-normal size-xl five-color">Rooms</p>
+                <p class="size-md primary-font-light four-color mt-40 desc-mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
                 <a href="#" class="btn-bg btn-medium">VIEW DETAILS</a>
               </div>
             </article>
@@ -455,15 +571,15 @@
 		  Start Superior Queen Section 
 		  =====================================================
 		  -->
-      <section class="superior-queen-section py-90">
+      <section class="superior-queen-section py-80">
         <div class="container">
           <!----- Start row ----->
           <div class="row align-items-center">
             <article class="col-lg-5">
               <div class="superior-queen-text superior-text-wrapper">
                 <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md ">SUPERIOR 2 queen</p>
-                <p class="rooms-title size-xl five-color">Rooms</p>
-                <p class="size-md primary-font-light four-color mt-10 mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
+                <p class="rooms-title margin-top-minus third-font-normal size-xl five-color">Rooms</p>
+                <p class="size-md primary-font-light four-color mt-40 desc-mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
                 <a href="#" class="btn-bg btn-medium">VIEW DETAILS</a>
               </div>
             </article>
@@ -517,15 +633,15 @@
 		  Start Luxury Single Section 
 		  =====================================================
 		  -->
-      <section class="luxury-single-section py-90">
+      <section class="luxury-single-section py-80">
         <div class="container">
           <!----- Start row ----->
           <div class="row flex-row-reverse align-items-center">
             <article class="col-lg-5">
               <div class="luxury-single-text superior-text-wrapper ms-auto">
                 <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md ">LUXURY SINGLE</p>
-                <p class="rooms-title size-xl five-color">Rooms</p>
-                <p class="size-md primary-font-light four-color mt-10 mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
+                <p class="rooms-title margin-top-minus third-font-normal size-xl five-color">Suites</p>
+                <p class="size-md primary-font-light four-color mt-40 desc-mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
                 <a href="#" class="btn-bg btn-medium">VIEW DETAILS</a>
               </div>
             </article>
@@ -579,15 +695,15 @@
 		  Start Luxury Double Section 
 		  =====================================================
 		  -->
-      <section class="luxury-double-section py-90">
+      <section class="luxury-double-section pt-80 pb-160">
         <div class="container">
           <!----- Start row ----->
           <div class="row align-items-center">
             <article class="col-lg-5">
               <div class="luxury-double-text superior-text-wrapper">
                 <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md ">LUXURY DOUBLE</p>
-                <p class="rooms-title size-xl five-color">Rooms</p>
-                <p class="size-md primary-font-light four-color mt-10 mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
+                <p class="rooms-title margin-top-minus third-font-normal size-xl five-color">Suites</p>
+                <p class="size-md primary-font-light four-color mt-40 desc-mb-50">Available with a King or Queen bed, our superior rooms feature luxurious bedding and functional work spaces. Additional amenities include complimentary WiFi, a coffeemaker and 52” Flat Panel HD television with 200 channels.</p>
                 <a href="#" class="btn-bg btn-medium">VIEW DETAILS</a>
               </div>
             </article>
@@ -642,10 +758,10 @@
 		  Start Accessible Rooms Section 
 		  =====================================================
 		  -->
-      <section class="accessible-rooms-section primary-bg py-90">
+      <section class="accessible-rooms-section primary-bg py-80">
         <div class="container">
           <!----- Start row ----->
-          <div class="row">
+          <div class="row g-5">
             <article class="col-lg-5">
               <div class="accessible-rooms-text">
                 <p class="size-lg secondary-font-display-normal secondary-color text-uppercase text-space-md mb-20">ACCESSIBLE ROOMS</p>
@@ -686,13 +802,97 @@
 		  =====================================================
 		  -->
 
+
+      <!-- 
+		  =====================================================
+		  Start Guests Testimonials Section 
+		  =====================================================
+		  -->
+      <section class="guests-testimonials-section">
+        <div class="guests-testimonials-bg-top bg-image-center" style="background-image: url('./assets/images/reuse-image/guests-testimonials/gguests-testimonials-bg-bottom.png');">
+          <div class="guests-testimonials-bg-bottom bg-image-center mx-auto" style="background-image: url('./assets/images/reuse-image/guests-testimonials/guests-testimonials-bg-top.png');">
+            <div class="guests-testimonials-wrapper shadow px-85 py-85">
+              <div class="d-sm-flex align-items-center justify-content-between mb-20">
+                <div class="guests-testimonials-top title">
+                  <p class="size-xxm primary-font-normal primary-color text-uppercase text-space-sm">TESTIMONIALS</p>
+                  <p class="size-lg secondary-font-display-normal secondary-color text-space-md  text-uppercase">FROM OUR GUESTS</p>
+                </div>
+                <img src="assets/images/reuse-image/guests-testimonials/guests-testimonials-logo.svg" alt="logo" class="guests-testimonials-logo">
+              </div>
+              <!--=========== start slider ===========-->
+              <div class="guests-testimonials-slider-container position-relative mt-50">
+                <div class="guests-testimonials-slider x-hideen">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="guests-testimonials-slider-text">
+                        <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
+                        <div class="guests-testimonials-slider-bottom-left d-flex align-items-center mt-100">
+                          <div class="guests-testimonials-slider-bottom-left-text">
+                            <p class="primary-font-light four-color text-uppercase text-space-sm">DEVETRICEC2018</p>
+                            <p class="primary-font-normal size-sm secondary-color text-space-sm">Atlanta, GA</p>
+                          </div>
+                          <hr class="h-line h-line-1 d-none d-sm-block">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="guests-testimonials-slider-text">
+                        <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
+                        <div class="guests-testimonials-slider-bottom-left d-flex align-items-center mt-100">
+                          <div class="guests-testimonials-slider-bottom-left-text">
+                            <p class="primary-font-light four-color text-uppercase text-space-sm">DEVETRICEC2018</p>
+                            <p class="primary-font-normal size-sm secondary-color text-space-sm">Atlanta, GA</p>
+                          </div>
+                          <hr class="h-line h-line-1 d-none d-sm-block">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="guests-testimonials-slider-text">
+                        <p class="primary-font-light primary-font-light-italic size-md four-color">“If you’re looking for a quiet, secluded getaway, The Partridge Inn is the answer. Whether you’re traveling for business or looking for a staycation getaway, this hotel rolls out the red carpet for its guest. I look forward to my next visit to the area so that I can stay at this hotel again.”</p>
+                        <div class="guests-testimonials-slider-bottom-left d-flex align-items-center mt-100">
+                          <div class="guests-testimonials-slider-bottom-left-text">
+                            <p class="primary-font-light four-color text-uppercase text-space-sm">DEVETRICEC2018</p>
+                            <p class="primary-font-normal size-sm secondary-color text-space-sm">Atlanta, GA</p>
+                          </div>
+                          <hr class="h-line h-line-1 d-none d-sm-block">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider next, prev button -->
+                <div class="guests-testimonials-slider-btn-wrapper slider-btn-wrapper d-flex align-items-center">
+                  <hr class="h-line h-line-1 d-block d-sm-none">
+                  <button type="button" class="slider-btn slider-btn1 swiper-prev me-55">
+                    <img src="assets/images/reuse-image/Left-Arrow.svg" alt="Left-Arrow" class="slider-btn-img">
+                  </button>
+                  <button type="button" class="slider-btn swiper-next">
+                    <img src="assets/images/reuse-image/Right-Arrow.svg" alt="Right-Arrow" class="slider-btn-img">
+                  </button>
+                </div>
+              </div>
+              <!--=========== End slider ===========-->
+              <div class="text-center mt-15">
+                <a href="#" class="btn-bg btn-large">MORE FROM TRIPADVISOR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+		  =====================================================
+		  End Guests Testimonials Section 
+		  =====================================================
+		  -->
+
       
     <!-- 
 		  =====================================================
 		  Start Newsletter Section 
 		  =====================================================
 		  -->
-      <section class="newsletter-section primary-bg py-90">
+      <section class="newsletter-section primary-bg py-80">
         <div class="container">
             <div class="newsletter-title text-center">
               <p class="newsletter-form-title position-relative primary-font-normal third-color">Stay “Inn the Know” with our newsletter <img src="assets/images/reuse-image/arrow-up.svg" alt="arrow"></p>
@@ -892,6 +1092,9 @@
 
     <!--------- jS Here --------->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>

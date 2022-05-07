@@ -12,19 +12,25 @@
   //   }
   // });
 
-  $(function() {
-    $('input[name="check-in-datepicker"]').daterangepicker({
-      singleDatePicker: true,
-      showDropdowns: true,
-      minYear: 1901,
-      maxYear: parseInt(moment().format('YYYY'),10)
-    }, function(start, end, label) {
-      var years = moment().diff(start, 'years');
-      // alert("You are " + years + " years old!");
-    });
-  });
+  /* ====== check in section select ====== */
+  $(".check-in-main-select").niceSelect();
+  /* ====== gallery page hero section select ====== */
+  $(".gallery-page-select").niceSelect();
 
-  $(".languege-select").niceSelect();
+  $(function () {
+    $('input[name="check-in-datepicker"]').daterangepicker(
+      {
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 1901,
+        maxYear: parseInt(moment().format("YYYY"), 10),
+      },
+      function (start, end, label) {
+        var years = moment().diff(start, "years");
+        // alert("You are " + years + " years old!");
+      }
+    );
+  });
 
   /* ====== mobile menu open, hide ====== */
   $(".menu-open-btn").click(function () {
