@@ -78,11 +78,25 @@ Responsive Breakpoint
 	*/
   /* ---- Dine ---- */
   .dine-section {
-    padding: 16rem 0 16rem;
+    padding: 16rem 0 14rem;
   }
 
-  .dine-img-col {
-    right: -2.5rem;
+  /* 
+	===============================================================
+	Start Wedings Page Responsive
+	===============================================================
+	*/
+  .brides-testimonials-wrapper {
+    padding: 20rem 0 21.6rem;
+  }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  .events-hero-text .events-hero-text-title-and {
+    font-size: 30rem;
   }
 }
 
@@ -140,10 +154,7 @@ Responsive Breakpoint
   /* ----- Button ----- */
   .btn-bg {
     height: 5rem;
-    font-size: 1.7rem;
-  }
-  .btn-medium {
-    max-width: 22rem;
+    font-size: 1.6rem;
   }
   .btn-small {
     max-width: 22rem;
@@ -218,7 +229,7 @@ Responsive Breakpoint
 	*/
   /* ---- Dine ---- */
   .dine-section {
-    padding: 16rem 0 16rem;
+    padding: 16rem 0 12rem;
   }
   .dine-text .dine-title {
     font-size: 10rem;
@@ -239,6 +250,15 @@ Responsive Breakpoint
   .culinary-team-right-title {
     margin-top: 3rem;
     margin-left: -3rem;
+  }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  .events-hero-text .events-hero-text-title-and {
+    font-size: 25rem;
   }
 }
 
@@ -302,7 +322,11 @@ Responsive Breakpoint
     margin-bottom: 2rem;
   }
 
-  /* ----- Button----- */
+  /* ----- Button ----- */
+  .btn-bg {
+    height: 5rem;
+    font-size: 1.5rem;
+  }
   .btn-small {
     max-width: 20rem;
   }
@@ -437,6 +461,52 @@ Responsive Breakpoint
     margin-top: 2rem;
     margin-left: -2rem;
   }
+
+  /* 
+	===============================================================
+	Start Weddings Page Responsive
+	===============================================================
+	*/
+  /* --- Weddings Section --- */
+  .weddings-text {
+    max-width: 100%;
+  }
+  .weddings-img-col {
+    position: static;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+
+  /* --- Brides Testimonials --- */
+  .brides-testimonials-wrapper {
+    padding: 17rem 0 18.6rem;
+  }
+  .brides-testimonials .brides-testimonials-desc {
+    font-size: 3rem;
+  }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  /* --- Hero Section --- */
+  .events-hero-text .events-hero-text-title-and {
+    font-size: 20rem;
+  }
+
+  /* --- Events Section --- */
+  .events-img-col {
+    position: static;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
 }
 
 @media (max-width: 1199px) {
@@ -493,14 +563,6 @@ Responsive Breakpoint
   }
   .mobile-menu-social1 .mobile-menu-social-item1:not(:last-child) {
     margin-bottom: 2rem;
-  }
-
-  /* ----- Button ----- */
-  .btn-bg {
-    font-size: 1.6rem;
-  }
-  .btn-medium {
-    max-width: 20rem;
   }
 
   /* ----- Check In ----- */
@@ -678,6 +740,15 @@ Responsive Breakpoint
   .culinary-team-name-text {
     padding-right: 0rem;
   }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  .events-hero-text .events-hero-text-title-and {
+    font-size: 17rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -727,14 +798,6 @@ Responsive Breakpoint
   }
   .mobile-menu-social2 .mobile-menu-social-item2:nth-child(4) a img {
     max-width: 3rem;
-  }
-
-  /* ----- Button ----- */
-  .btn-bg {
-    font-size: 1.5rem;
-  }
-  .btn-medium {
-    max-width: 18rem;
   }
 
   /* ----- Slider BTN ----- */
@@ -899,7 +962,11 @@ Responsive Breakpoint
     margin-top: -3.5rem;
   }
   .dine-img-col {
-    position: static;
+    right: 0;
+    position: relative;
+  }
+  .dine-img-title {
+    left: 2rem;
   }
 
   /* --- Dining Section --- */
@@ -930,11 +997,37 @@ Responsive Breakpoint
   .culinary-team-name-desc-wrapper {
     margin-top: 5rem;
   }
+
+  /* 
+	===============================================================
+	Start Weddings Page Responsive
+	===============================================================
+	*/
+  /* --- Food Menu Item Section --- */
+  .weddings-food-manu-item-name,
+  .weddings-food-manu-item-slider-btn {
+    top: 2rem;
+  }
+
+  /* --- Food Gallery Section --- */
+  .weddings-gallery-title {
+    margin-bottom: 5rem;
+  }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  /* --- Gallery Section --- */
+  .events-gallery-title {
+    margin-bottom: 5rem;
+  }
 }
 
 @media (max-width: 767px) {
   :root {
-    --size-xxl: 8rem;
+    --size-xxl: 6rem;
     --size-xl: 3rem;
     --size-md: 1.8rem;
   }
@@ -997,9 +1090,6 @@ Responsive Breakpoint
   .btn-bg {
     font-size: 1.3rem;
     height: 4rem;
-  }
-  .btn-medium {
-    max-width: 16rem;
   }
 
   /* ----- Check In ----- */
@@ -1074,10 +1164,33 @@ Responsive Breakpoint
   .culinary-team-right-title {
     margin-left: -1.5rem;
   }
+
+  /* 
+	===============================================================
+	Start Wedings Page Responsive
+	===============================================================
+	*/
+  /* --- Brides Testimonials --- */
+  .brides-testimonials-wrapper {
+    padding: 12rem 0 13.6rem;
+  }
+  .brides-testimonials .brides-testimonials-desc {
+    font-size: 2.5rem;
+  }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  .events-hero-text .events-hero-text-title-and {
+    font-size: 12rem;
+  }
 }
 
 @media (max-width: 575px) {
   :root {
+    --size-xxl: 5rem;
     --size-md: 1.7rem;
   }
 
@@ -1176,7 +1289,7 @@ Responsive Breakpoint
 
   /* ----- Newsletter ----- */
   .newsletter-title .newsletter-form-title {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
   .newsletter-close {
     margin-bottom: 4rem;
@@ -1255,9 +1368,32 @@ Responsive Breakpoint
     margin-left: 2rem;
     margin-right: 2rem;
   }
+
+  /* 
+	===============================================================
+	Start Wedings Page Responsive
+	===============================================================
+	*/
+  /* --- Brides Testimonials --- */
+  .brides-testimonials-wrapper {
+    padding: 10rem 0 11.6rem;
+  }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  .events-hero-text .events-hero-text-title-and {
+    font-size: 10rem;
+  }
 }
 
 @media (max-width: 425px) {
+  :root {
+    --size-xxl: 4rem;
+  }
+
   /* 
 	===============================================================
 	Reuseble Components Responsive
@@ -1315,6 +1451,37 @@ Responsive Breakpoint
   }
   .culinary-team .culinary-team-text p {
     font-size: 1.2rem;
+  }
+
+  /* 
+	===============================================================
+	Start Wedings Page Responsive
+	===============================================================
+	*/
+  /* --- Food Gallery Section --- */
+  .weddings-gallery-title {
+    margin-bottom: 3rem;
+  }
+
+  /* --- Brides Testimonials --- */
+  .brides-testimonials .brides-testimonials-desc {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  /* --- Hero Section --- */
+  .events-hero-text .events-hero-text-title-and {
+    font-size: 8rem;
+  }
+
+  /* --- Gallery Section --- */
+  .events-gallery-title {
+    margin-bottom: 3rem;
   }
 }
 

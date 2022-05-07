@@ -1,10 +1,6 @@
-1) preloader
-2) check in -------- end
-3) guests testimonials -------- end
-4) gallery page hero slider -------- end
-5) press page ------------ end
-6) Sticky menu check in
-7) dining SAVOR THE section ------------ end
-8) Zapfino text affter change ------------ end
-
-** 160px space start weddings page theke
+1) Preloader ---------------------------------
+2) Sticky menu check in ----------------------
+3) All pages hero section title --------------
+4) Menu left, right overlay ------------------
+5) Mobile menu right scroll bar --------------
+6) Sticky menu -------------------------------

@@ -1,5 +1,4 @@
-(function ($) {
-  "use strict";
+$(document).ready(function () {
   /* ======= sticky menu ======= */
   // var windows = $(window);
   // var sticky = $(".header-sticky");
@@ -11,6 +10,16 @@
   //     sticky.addClass("stick");
   //   }
   // });
+
+  /* ====== newsletter ====== */
+  $(".newsletter-title").click(function () {
+    $(".newsletter-form-wrapper").show();
+    $(".newsletter-title").hide();
+  });
+  $(".newsletter-close-btn").click(function () {
+    $(".newsletter-form-wrapper").hide();
+    $(".newsletter-title").show();
+  });
 
   /* ====== check in section select ====== */
   $(".check-in-main-select").niceSelect();
@@ -40,19 +49,9 @@
     $(".mobile-menu-wrapper").removeClass("navBar open-menu");
   });
 
-  /* ====== newsletter ====== */
-  $(".newsletter-title").click(function () {
-    $(".newsletter-form-wrapper").show();
-    $(".newsletter-title").hide();
-  });
-  $(".newsletter-close-btn").click(function () {
-    $(".newsletter-form-wrapper").hide();
-    $(".newsletter-title").show();
-  });
-
   // $(function () {
   //   $("#video-back").vidbacking({
   //     masked: true,
   //   });
   // });
-})(jQuery);
+});

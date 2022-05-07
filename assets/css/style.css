@@ -489,7 +489,7 @@ Start Reuseble Components
   left: 0;
   width: 100%;
   z-index: 9999;
-  /* display: none; */
+  display: none;
 }
 
 .navBar .header-btn .menu-open-btn {
@@ -1343,14 +1343,14 @@ Dine Section
 .dine-img-col {
   position: absolute;
   top: 0%;
-  right: -16.5rem;
+  right: -1rem;
 }
 
 .dine-img-title {
-  width: 95%;
+  width: 90%;
   position: absolute;
   top: 2.4rem;
-  left: 1.9rem;
+  left: 3rem;
 }
 
 /*------------- 
@@ -1465,7 +1465,7 @@ Weddings Section
 .weddings-img-col {
   position: absolute;
   top: 50%;
-  right: -1.5rem;
+  right: -1rem;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -1503,25 +1503,22 @@ Weddings Cakes Section
 Brides Testimonials Section
 --------------------------------
 */
-.brides-testimonials {
-  padding: 26rem 0 23rem;
+.brides-testimonials-wrapper {
+  padding: 26rem 0 27.6rem;
 }
 
-.brides-testimonials-slider-wrapper {
+.brides-testimonials {
+  max-width: 108.8rem;
   position: relative;
   z-index: 111;
 }
 
-.brides-testimonials-slide {
-  max-width: 108.8rem;
-}
-
-.brides-testimonials-slide .brides-testimonials-slide-desc {
+.brides-testimonials .brides-testimonials-desc {
   font-size: 4rem;
   line-height: 1.2;
 }
 
-.brides-testimonials-slide .brides-testimonials-slide-man-name {
+.brides-testimonials .brides-testimonials-man-name {
   font-size: 2.4rem;
   line-height: 1.3;
 }
@@ -1544,15 +1541,12 @@ Start Events Page Style ______________________
 Hero Section
 ------------------------------
 */
-.events-hero-text .events-hero-text-title::after {
-  content: "&";
+.events-hero-text .events-hero-text-title-and  {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-family: var(--secondary-font-display-normal);
   font-size: 40rem;
-  line-height: 6rem;
-  color: var(--five-color);
+  line-height: 1;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -1572,7 +1566,7 @@ Events Section
 .events-img-col {
   position: absolute;
   top: 50%;
-  right: -1.5rem;
+  right: -1rem;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
