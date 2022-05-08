@@ -26,12 +26,13 @@ $(document).ready(function () {
     $(".newsletter-title").show();
   });
 
+  /* ====== gallery page hero section select ====== */
+  $(".gallery-page-select").niceSelect();
   /* ====== nav check in select ====== */
   $(".nav-check-in-main-select").niceSelect();
   /* ====== check in section select ====== */
   $(".check-in-main-select").niceSelect();
-  /* ====== gallery page hero section select ====== */
-  $(".gallery-page-select").niceSelect();
+  
 
   /* ====== nav date ====== */
   $(function () {
@@ -48,7 +49,7 @@ $(document).ready(function () {
       }
     );
   });
-  
+
   /* ====== check in date ====== */
   $(function () {
     $('input[name="check-in-datepicker"]').daterangepicker(

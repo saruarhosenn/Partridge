@@ -1113,7 +1113,7 @@ Nav Bar Check In
   bottom: 3rem;
   right: 3rem;
   z-index: 99;
-  background: var(--primary-bg);
+  background: var(--btn-bg);
   width: 4rem;
   height: 4rem;
 }
@@ -1126,6 +1126,8 @@ Nav Bar Check In
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(1000%) contrast(100%);
+  -webkit-filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(1000%) contrast(100%);
 }
 
 /* 
