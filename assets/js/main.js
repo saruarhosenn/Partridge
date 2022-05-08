@@ -11,6 +11,14 @@ $(document).ready(function () {
   //   }
   // });
 
+    /* ====== mobile menu open, hide ====== */
+    $(".menu-open-btn").click(function () {
+      $(".mobile-menu-wrapper").addClass("navBar open-menu");
+    });
+    $(".menu-close-btn").click(function () {
+      $(".mobile-menu-wrapper").removeClass("navBar open-menu");
+    });
+
   /* ====== newsletter ====== */
   $(".newsletter-title").click(function () {
     $(".newsletter-form-wrapper").show();
@@ -39,14 +47,6 @@ $(document).ready(function () {
         // alert("You are " + years + " years old!");
       }
     );
-  });
-
-  /* ====== mobile menu open, hide ====== */
-  $(".menu-open-btn").click(function () {
-    $(".mobile-menu-wrapper").addClass("navBar open-menu");
-  });
-  $(".menu-close-btn").click(function () {
-    $(".mobile-menu-wrapper").removeClass("navBar open-menu");
   });
 
   // $(function () {

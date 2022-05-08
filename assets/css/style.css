@@ -489,7 +489,6 @@ Start Reuseble Components
   left: 0;
   width: 100%;
   z-index: 9999;
-  display: none;
 }
 
 .navBar .header-btn .menu-open-btn {
@@ -499,7 +498,6 @@ Start Reuseble Components
 /*---- Mobile Menu 
 ------------------------*/
 .navBar .mobile-menu-wrapper {
-  display: none;
   background: linear-gradient(
       to right,
       rgba(30, 47, 37, 0.9) 60%,
@@ -510,7 +508,7 @@ Start Reuseble Components
   padding-bottom: 3.8rem;
   position: absolute;
   top: -3rem;
-  right: -150%;
+  right: -100%;
   width: 100%;
   height: 100%;
   height: 100vh;
@@ -643,6 +641,8 @@ Start Reuseble Components
 /*---- All Button 
 -----------------------*/
 .btn-bg {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1541,7 +1541,7 @@ Start Events Page Style ______________________
 Hero Section
 ------------------------------
 */
-.events-hero-text .events-hero-text-title-and  {
+.events-hero-text .events-hero-text-title-and {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1598,13 +1598,8 @@ History Section
 
 .history-img-col {
   position: absolute;
-  top: 50%;
+  top: 0;
   right: -1.5rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
 }
 
 /*------------- 
@@ -1628,7 +1623,7 @@ Experience Section
   font-size: 4rem;
   line-height: 1.2;
   text-align: center;
-  width: 95%;
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1677,13 +1672,8 @@ Masters Section
 
 .masters-img-col {
   position: absolute;
-  top: 50%;
+  top: 0%;
   right: -1.5rem;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
 }
 /* 
 =========================================================================
@@ -1705,8 +1695,8 @@ Hero Section
 -----------------------------
 */
 .gallery-page-slider-bottom {
-  height: 7.6rem;
-  margin-top: -2.2rem;
+  padding: 1.8rem 0;
+  margin-top: -2.5rem;
   position: relative;
   z-index: 99;
 }
@@ -1717,7 +1707,7 @@ Hero Section
   top: 50%;
   right: 0;
   width: 1px;
-  height: 181%;
+  height: 185%;
   background-color: #b68e4b;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -1795,6 +1785,7 @@ Hero Section
 .gallery-page-select .option.focus,
 .gallery-page-select .option.selected.focus {
   color: var(--four-color);
+  font-weight: 400 !important;
 }
 
 .gallery-page-select .current {
@@ -1884,6 +1875,25 @@ Hero Section
 }
 
 /*------------- 
+Text Section
+------------------------------
+*/
+.press-text {
+  max-width: 82rem;
+}
+
+.press-text .press-text-link {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+.press-text .press-text-link:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/*------------- 
 Press Box Section
 ------------------------------
 */
@@ -1897,18 +1907,18 @@ Press Box Section
   border: 1px solid #707070;
 }
 
-.press-text .press-date-text {
+.press-box-text .press-date-text {
   color: #a0a5a8;
 }
 
-.press-text .press-title-text {
+.press-box-text .press-title-text {
   font-size: 2.4rem;
   line-height: 1.3;
 }
 /* 
 =========================================================================
 =========================================================================
-EndPress Pagee Style ______________________
+End Press Pagee Style ______________________
 =========================================================================
 =========================================================================
 */
@@ -1934,12 +1944,12 @@ Hero Section
 }
 
 .error-hero-text .error-hero-text-title {
-  font-size: 48rem;
+  font-size: 40rem;
   line-height: 0.6;
 }
 
 .error-hero-text .error-hero-text-desc {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.3;
 }
 

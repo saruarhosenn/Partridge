@@ -4,3 +4,4 @@
 4) Menu left, right overlay ------------------
 5) Mobile menu right scroll bar --------------
 6) Sticky menu -------------------------------
+7) All btn responsive width fixed

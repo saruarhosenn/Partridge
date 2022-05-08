@@ -98,6 +98,21 @@ Responsive Breakpoint
   .events-hero-text .events-hero-text-title-and {
     font-size: 30rem;
   }
+
+  /* 
+	===============================================================
+	Start 404 Page Responsive
+	===============================================================
+	*/
+  .error-hero-text .error-hero-text-title {
+    font-size: 30rem;
+  }
+  .error-hero-text .error-hero-text-title-2 {
+    font-size: 4rem;
+  }
+  .error-hero-text .error-hero-text-desc {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 1599px) {
@@ -257,8 +272,37 @@ Responsive Breakpoint
 	Start Events Page Responsive
 	===============================================================
 	*/
+  /* --- Hero Section --- */
   .events-hero-text .events-hero-text-title-and {
     font-size: 25rem;
+  }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  /* --- History Section --- */
+  .history-section {
+    padding-bottom: 8rem;
+  }
+
+  /* 
+	===============================================================
+	Start 404 Page Responsive
+	===============================================================
+	*/
+  .error-hero-wrapper {
+    margin-top: 7rem;
+  }
+  .error-hero-text .error-hero-text-title {
+    font-size: 25rem;
+  }
+  .error-hero-text .error-hero-text-title-2 {
+    font-size: 3rem;
+  }
+  .error-hero-text .error-hero-text-desc {
+    font-size: 1.8rem;
   }
 }
 
@@ -507,6 +551,21 @@ Responsive Breakpoint
     -ms-transform: translateY(0%);
     -o-transform: translateY(0%);
   }
+
+  /* 
+	===============================================================
+	Start 404 Page Responsive
+	===============================================================
+	*/
+  .error-hero-wrapper {
+    margin-top: 8rem;
+  }
+  .error-hero-text .error-hero-text-title {
+    font-size: 20rem;
+  }
+  .error-hero-text .error-hero-text-desc {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -746,8 +805,42 @@ Responsive Breakpoint
 	Start Events Page Responsive
 	===============================================================
 	*/
+  /* --- Hero Section --- */
   .events-hero-text .events-hero-text-title-and {
     font-size: 17rem;
+  }
+
+  /* 
+	===============================================================
+	Start Masters Page Responsive
+	===============================================================
+	*/
+  /* --- Masters Section --- */
+  .masters-text {
+    max-width: 100%;
+  }
+  .masters-img-col {
+    position: static;
+  }
+
+  /* 
+	===============================================================
+	Start History Page Responsive
+	===============================================================
+	*/
+  /* --- Experience Section --- */
+  .history-experience-img .history-experience-img-title {
+    font-size: 3rem;
+  }
+
+  /* 
+	===============================================================
+	Start Contact Page Responsive
+	===============================================================
+	*/
+  /* --- Contact Section --- */
+  .address-info .address-info-text {
+    font-size: 3rem;
   }
 }
 
@@ -1023,6 +1116,55 @@ Responsive Breakpoint
   .events-gallery-title {
     margin-bottom: 5rem;
   }
+
+  /* 
+	===============================================================
+	Start History Page Responsive
+	===============================================================
+	*/
+  /* --- History Section --- */
+  .history-text {
+    max-width: 100%;
+  }
+  .history-img-col {
+    position: static;
+  }
+
+  /* --- Experience Section --- */
+  .history-experience-title {
+    margin-bottom: 5rem;
+  }
+
+  /* 
+	===============================================================
+	Start Gallery Page Responsive
+	===============================================================
+	*/
+  /* --- Hero Section --- */
+  .gallery-page-select-wrapper {
+    padding-right: 2rem;
+  }
+  .slider-btn-info-wrapper {
+    padding-left: 2rem;
+  }
+
+  /* 
+	===============================================================
+	Start 404 Page Responsive
+	===============================================================
+	*/
+  .error-hero-wrapper {
+    margin-top: 6rem;
+  }
+  .error-hero-text .error-hero-text-title {
+    font-size: 14rem;
+  }
+  .error-hero-text .error-hero-text-title-2 {
+    font-size: 2.2rem;
+  }
+  .error-hero-text .error-hero-text-desc {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1055,6 +1197,10 @@ Responsive Breakpoint
   .text-space-sm {
     letter-spacing: 0.2rem;
     word-spacing: 0.2rem;
+  }
+
+  .hero-logo {
+    max-width: 13rem;
   }
 
   /* 
@@ -1186,6 +1332,69 @@ Responsive Breakpoint
   .events-hero-text .events-hero-text-title-and {
     font-size: 12rem;
   }
+
+  /* 
+	===============================================================
+	Start Events Page Responsive
+	===============================================================
+	*/
+  /* --- History Section --- */
+  .history-section {
+    padding-bottom: 5rem;
+  }
+
+  /* 
+	===============================================================
+	Start History Page Responsive
+	===============================================================
+	*/
+  /* --- Experience --- */
+  .history-experience-img .history-experience-img-title {
+    font-size: 2.7rem;
+  }
+
+  /* 
+	===============================================================
+	Start Gallery Page Responsive
+	===============================================================
+	*/
+  /* --- Hero Section --- */
+  .gallery-page-slider-bottom {
+    padding-bottom: 1rem;
+  }
+
+  .gallery-page-select-wrapper {
+    padding-right: 0rem;
+  }
+  .slider-btn-info-wrapper {
+    padding-left: 0rem;
+  }
+  .gallery-page-slider-bottom-border::after {
+    display: none;
+  }
+  .gallery-slider-btn-next-text {
+    margin-right: 2rem;
+  }
+
+  /* 
+	===============================================================
+	Start Contact Page Responsive
+	===============================================================
+	*/
+  /* --- Contact Section --- */
+  .address-info .address-info-text {
+    font-size: 2.5rem;
+  }
+
+  /* 
+	===============================================================
+	Start Press Page Responsive
+	===============================================================
+	*/
+  /* --- Text Section --- */
+  .press-text .press-text-link {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1213,6 +1422,10 @@ Responsive Breakpoint
   }
   .pb-80 {
     padding-bottom: 4rem;
+  }
+
+  .hero-logo {
+    max-width: 10rem;
   }
 
   /* 
@@ -1387,11 +1600,76 @@ Responsive Breakpoint
   .events-hero-text .events-hero-text-title-and {
     font-size: 10rem;
   }
+
+  /* 
+	===============================================================
+	Start History Page Responsive
+	===============================================================
+	*/
+  /* --- History Section --- */
+  .history-section {
+    padding-bottom: 4rem;
+  }
+
+  /* --- Experience --- */
+  .history-experience-img .history-experience-img-title {
+    font-size: 2.5rem;
+  }
+
+  /* 
+	===============================================================
+	Start Contact Page Responsive
+	===============================================================
+	*/
+  /* --- Contact Section --- */
+  .address-info .address-info-text {
+    font-size: 2rem;
+  }
+
+  /* 
+	===============================================================
+	Start Press Page Responsive
+	===============================================================
+	*/
+  /*------------- 
+  Hero Section
+  ------------------------------
+  */
+  .perss-hero-section {
+    padding: 16rem 0 5rem;
+  }
+
+  /* --- Text Section --- */
+  .press-text .press-text-link {
+    font-size: 1.8rem;
+  }
+
+  /* 
+	===============================================================
+	Start 404 Page Responsive
+	===============================================================
+	*/
+  .error-hero-wrapper {
+    margin-top: 6rem;
+  }
+  .error-hero-text .error-hero-text-title {
+    font-size: 13rem;
+  }
+  .error-hero-text .error-hero-text-title-2 {
+    font-size: 1.8rem;
+  }
+  .error-hero-text .error-hero-text-desc {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 425px) {
   :root {
     --size-xxl: 4rem;
+  }
+
+  .hero-logo {
+    max-width: 9rem;
   }
 
   /* 
@@ -1483,6 +1761,63 @@ Responsive Breakpoint
   .events-gallery-title {
     margin-bottom: 3rem;
   }
+
+  /* 
+	===============================================================
+	Start History Page Responsive
+	===============================================================
+	*/
+  /* --- Experience Section --- */
+  .history-experience-title {
+    margin-bottom: 3rem;
+  }
+
+  /* 
+	===============================================================
+	Start History Page Responsive
+	===============================================================
+	*/
+  /* --- Experience --- */
+  .history-experience-img .history-experience-img-title {
+    font-size: 2rem;
+  }
+
+  /* 
+	===============================================================
+	Start Gallery Page Responsive
+	===============================================================
+	*/
+  /* --- Hero Section --- */
+  .gallery-page-select-col {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  /* 
+	===============================================================
+	Start Press Page Responsive
+	===============================================================
+	*/
+  /* --- Text Section --- */
+  .press-text {
+    display: block !important;
+  }
+  .press-text .press-text-link {
+    display: table;
+    font-size: 1.6rem;
+  }
+
+  /* 
+	===============================================================
+	Start 404 Page Responsive
+	===============================================================
+	*/
+  .error-hero-wrapper {
+    margin-top: 5rem;
+  }
+  .error-hero-text .error-hero-text-title {
+    font-size: 10rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1551,5 +1886,15 @@ Responsive Breakpoint
   /* --- Culinary Team --- */
   .culinary-team-right-title {
     margin-left: -2rem;
+  }
+
+  /* 
+	===============================================================
+	Start History Page Responsive
+	===============================================================
+	*/
+  /* --- Experience --- */
+  .history-experience-img .history-experience-img-title {
+    font-size: 1.8rem;
   }
 }
