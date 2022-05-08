@@ -623,6 +623,16 @@ Responsive Breakpoint
   .mobile-menu-social1 .mobile-menu-social-item1:not(:last-child) {
     margin-bottom: 2rem;
   }
+  .nav-check-in-datepicker-wrapper {
+    padding-right: 1.5rem;
+  }
+  .nav-check-in-select {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .header-btn {
+    padding-left: 1.5rem;
+  }
 
   /* ----- Check In ----- */
   .check-in-section {
@@ -891,6 +901,9 @@ Responsive Breakpoint
   }
   .mobile-menu-social2 .mobile-menu-social-item2:nth-child(4) a img {
     max-width: 3rem;
+  }
+  .header-btn {
+    padding-left: 0;
   }
 
   /* ----- Slider BTN ----- */

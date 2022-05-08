@@ -626,107 +626,120 @@ Start Reuseble Components
 }
 
 /*----- 
-
+Nav Bar Check In
 --------------------------*/
-.nav-check-in-border {
-  border-right: 1px solid var(--secondary-color);
+.navBar-check-in {
+  display: none;
 }
 
-.nav-check-in-select-data p {
-  font-size: 1.2rem;
-}
+@media (min-width: 992px) {
+  .sticky-menu .navBar-check-in {
+    display: block !important;
+  }
 
-.nav-check-in-datepicker .nav-check-in-datepicker-input-box {
-  position: relative;
-}
+  .nav-check-in-border {
+    border-right: 1px solid var(--secondary-color);
+  }
 
-.nav-check-in-datepicker .nav-check-in-datepicker-input-box::after {
-  content: "";
-  position: absolute;
-  top: 30%;
-  right: 0rem;
-  width: 1.2rem;
-  height: 0.7rem;
-  background: url("../images/reuse-image/arrow_down.svg") no-repeat center /
-    1.2rem 0.7rem;
-  z-index: 1;
-}
+  .nav-check-in-select-data p {
+    font-size: 1.2rem;
+  }
 
-.nav-check-in-datepicker-input {
-  font-family: "Montserrat", sans-serif;
-  font-size: var(--size-xxm);
-  color: var(--third-color);
-}
+  .nav-check-in-datepicker .nav-check-in-datepicker-input-box {
+    position: relative;
+  }
 
-.nav-check-in-datepicker,
-.nav-check-in-select {
-  width: 50%;
-}
+  .nav-check-in-datepicker .nav-check-in-datepicker-input-box::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: 0rem;
+    width: 1.2rem;
+    height: 0.7rem;
+    background: url("../images/reuse-image/arrow_down.svg") no-repeat center /
+      1.2rem 0.7rem;
+    z-index: 1;
+  }
 
-.nav-check-in-select .nav-check-in-main-select {
-  position: relative !important;
-  background: transparent;
-  font-family: var(--secondary-font-display-normal);
-  color: var(--third-color);
-  font-size: 2.5rem;
-  width: 100%;
-  height: 100%;
-  border-color: transparent;
-  padding: 0;
-}
+  .nav-check-in-datepicker-input {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--size-xxm);
+    color: var(--third-color);
+  }
 
-.nav-check-in-select .nav-check-in-main-select:focus,
-.nav-check-in-select .nav-check-in-main-select:hover {
-  border-color: transparent !important;
-}
+  .nav-check-in-datepicker {
+    width: 46%;
+  }
 
-.nav-check-in-select .nav-check-in-main-select::after {
-  border: 0;
-  background: url("../images/reuse-image/arrow_down.svg") no-repeat center /
-    1.2rem 0.7rem;
-  width: 1.2rem;
-  height: 0.7rem;
-  top: 50%;
-  right: 0px;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
+  .nav-check-in-select {
+    width: 50%;
+  }
 
-.nav-check-in-select .nav-check-in-main-select.open:after {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
+  .nav-check-in-select .nav-check-in-main-select {
+    position: relative !important;
+    background: transparent;
+    font-family: var(--secondary-font-display-normal);
+    color: var(--third-color);
+    font-size: 2.5rem;
+    width: 100%;
+    height: 100%;
+    border-color: transparent;
+    padding: 0;
+  }
 
-.nav-check-in-main-select ul {
-  width: 8rem;
-  top: 100% !important;
-  padding: 0px !important;
-  z-index: 9999 !important;
-  height: 21rem;
-  overflow-x: hidden !important;
-  overflow-y: scroll !important;
-}
+  .nav-check-in-select .nav-check-in-main-select:focus,
+  .nav-check-in-select .nav-check-in-main-select:hover {
+    border-color: transparent !important;
+  }
 
-.nav-check-in-main-select ul li {
-  text-align: left !important;
-  font-family: var(--secondary-font-display-normal);
-  color: var(--secondary-color);
-  font-size: 2rem;
-  padding: 0 8px !important;
-  line-height: 3.5rem !important;
-  min-height: 3.5rem !important;
-}
+  .nav-check-in-select .nav-check-in-main-select::after {
+    border: 0;
+    background: url("../images/reuse-image/arrow_down.svg") no-repeat center /
+      1.2rem 0.7rem;
+    width: 1.2rem;
+    height: 0.7rem;
+    top: 50%;
+    right: 0px;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 
-.nav-check-in-main-select ul li:hover {
-  color: var(--four-color);
-}
+  .nav-check-in-select .nav-check-in-main-select.open:after {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 
-.nav-check-in-main-select .option.focus,
-.nav-check-in-main-select .option.selected.focus {
-  color: var(--four-color);
-  font-weight: 400 !important;
+  .nav-check-in-main-select ul {
+    width: 8rem;
+    top: 100% !important;
+    padding: 0px !important;
+    z-index: 9999 !important;
+    height: 21rem;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+  }
+
+  .nav-check-in-main-select ul li {
+    text-align: left !important;
+    font-family: var(--secondary-font-display-normal);
+    color: var(--secondary-color);
+    font-size: 2rem;
+    padding: 0 8px !important;
+    line-height: 3.5rem !important;
+    min-height: 3.5rem !important;
+  }
+
+  .nav-check-in-main-select ul li:hover {
+    color: var(--four-color);
+  }
+
+  .nav-check-in-main-select .option.focus,
+  .nav-check-in-main-select .option.selected.focus {
+    color: var(--four-color);
+    font-weight: 400 !important;
+  }
 }
 
 /*---- All Button 
