@@ -1,7 +1,7 @@
 1) Preloader ---------------------------------
 2) Sticky menu check in ----------------------
-3) All pages hero section title --------------
+3) All pages hero section title -------------- end
 4) Menu left, right overlay ------------------
 5) Mobile menu right scroll bar --------------
-6) Sticky menu -------------------------------
+6) Sticky menu ------------------------------- end
 7) All btn responsive width fixed

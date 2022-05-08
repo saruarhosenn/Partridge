@@ -55,37 +55,118 @@
 	  Start Header Section 
 	  =====================================================
 	  -->
-    <header class="transparent-header header-sticky">
+    <header class="transparent-header">
       <nav class="navBar">
         <div
-          class="container d-flex justify-content-between align-items-center"
+          class="container"
         >
-          <!--======== Logo =========-->
-          <div class="header-logo">
-            <a href="index.html">
-              <img
-                src="assets/images/reuse-image/header/header-logo.svg"
-                alt="header logo"
-                class="header-logo-svg"
-              />
-            </a>
-          </div>
-
-          <!--======= Header Btn, Menu Open Btn =======-->
-          <div class="header-btn d-flex align-items-center justify-content-end">
-            <a href="#" class="reserve-btn btn-bg btn-medium me-20"
-              >RESERVE NOW</a
-            >
-            <a
-              href="javascript:void(0)"
-              class="menu-open-btn btn-bg d-flex align-items-center justify-content-center"
-            >
-              <span class="me-20">MENU</span>
-              <img
-                src="assets/images/reuse-image/header/menu-bar.svg"
-                alt="menu-bar"
-              />
-            </a>
+          <div class="row g-0 align-items-center">
+            <div class="col-md-2 border">
+              <!--======== Logo =========-->
+              <div class="header-logo">
+                <a href="index.html">
+                  <img
+                    src="assets/images/reuse-image/header/header-logo.svg"
+                    alt="header logo"
+                    class="header-logo-svg"
+                  />
+                </a>
+              </div>
+              <!--======== Sticky Menu Logo =========-->
+              <div class="sticky-header-logo">
+                <a href="index.html">
+                  <img
+                    src="assets/images/reuse-image/header/header-logo.svg"
+                    alt="header logo"
+                    class="sticky-header-logo-svg"
+                  />
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-md-10">
+              <div class="row g-0 align-items-center">
+                <!--=========== Check In Form ===========-->
+                <form action="#" class="col-md-6 ms-auto">
+                  <div class="row g-0">
+                    <div class="col-md-7">
+                      <div class="d-flex align-items-center justify-content-between pe-20 nav-check-in-border h-100">
+                        <div class="nav-check-in-datepicker pe-20">
+                          <p class="mb-05 primary-font-normal size-xxm third-color">Check In</p>
+                          <div class="nav-check-in-datepicker-input-box">
+                            <input type="text" name="nav-check-in-datepicker" value="" class="nav-check-in-datepicker-input w-100" />
+                          </div>
+                        </div>
+                        <div class="nav-check-in-datepicker">
+                          <p class="mb-05 primary-font-normal size-xxm third-color">Check Out</p>
+                          <div class="nav-check-in-datepicker-input-box">
+                            <input type="text" name="nav-check-in-datepicker" value="" class="nav-check-in-datepicker-input w-100" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center justify-content-between h-100">
+                      <div class="nav-check-in-select nav-check-in-border px-20">
+                        <div class="nav-check-in-select-data">
+                          <p class="primary-font-normal third-color">Adults</p>
+                          <select class="nav-check-in-main-select">
+                            <option data-display="1">
+                              1
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="nav-check-in-select nav-check-in-border px-20">
+                        <div class="nav-check-in-select-data">
+                          <p class="primary-font-normal third-color">Children</p>
+                          <select class="nav-check-in-main-select">
+                            <option data-display="0">
+                              0
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!--======= Header Btn, Menu Open Btn =======-->
+                <div class="col-md-4">
+                  <div class="header-btn d-flex align-items-center justify-content-end ps-20">
+                    <a href="#" class="reserve-btn btn-bg btn-medium me-20"
+                      >RESERVE NOW</a
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="menu-open-btn btn-bg d-flex align-items-center justify-content-center"
+                    >
+                      <span class="me-20">MENU</span>
+                      <img
+                        src="assets/images/reuse-image/header/menu-bar.svg"
+                        alt="menu-bar"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!--======== Mobile Menu =========-->
@@ -327,7 +408,7 @@
 		  Start Check In Section 
 		  =====================================================
 		  -->
-      <section class="check-in-section">
+      <section class="check-in-section show-sticky-menu">
         <div class="container position-relative">
           <!----- Start row ----->
           <div class="check-in-wrapper px-30 py-30 shadow third-bg">
@@ -979,6 +1060,7 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <!-- <script src="assets/js/jquery.vidbacking.min.js"></script> -->
     <script src="assets/js/jquery.vide.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
