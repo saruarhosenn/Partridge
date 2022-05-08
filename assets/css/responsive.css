@@ -584,7 +584,16 @@ Responsive Breakpoint
 	Reuseble Components Responsive
 	===============================================================
 	*/
-  /* ----- Button ----- */
+  /* ----- Header ----- */
+  .navBar .header-btn .menu-open-btn {
+    padding: 0 3rem;
+  }
+  .navBar .header-btn a {
+    font-size: 1.3rem;
+  }
+  .navBar .header-btn a img {
+    width: 2.5rem;
+  }
   .mobile-menu-wrapper .mobile-menu-row {
     margin-left: -4rem;
     margin-right: -4rem;
@@ -864,6 +873,12 @@ Responsive Breakpoint
 	===============================================================
 	*/
   /*---- Header ----*/
+  .navBar .header-btn a:first-child {
+    max-width: 16rem;
+  }
+  .navBar .header-btn a:last-child {
+    max-width: 13rem;
+  }
   .mobile-menu-logo-row {
     margin-bottom: 5rem;
   }
@@ -1447,6 +1462,28 @@ Responsive Breakpoint
 	===============================================================
 	*/
   /*---- Header ----*/
+  .transparent-header {
+    top: 2rem;
+  }
+  .sticky-menu {
+    top: 0;
+  }
+  .navBar .header-logo .header-logo-svg {
+    max-width: 11rem;
+  }
+  .navBar .header-btn a {
+    font-size: 1.2rem;
+  }
+  .navBar .header-btn a:first-child {
+    max-width: 15rem;
+    margin-right: 1.5rem;
+  }
+  .navBar .header-btn a:last-child {
+    max-width: 12rem;
+  }
+  .navBar .header-btn a img {
+    width: 2rem;
+  }
   .navBar .mobile-menu-wrapper {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1691,6 +1728,9 @@ Responsive Breakpoint
 	===============================================================
 	*/
   /*----- Header ------*/
+  .navBar .header-btn a:first-child {
+    display: none;
+  }
   .mobile-menu-social2 .mobile-menu-social-item2:not(:last-child) {
     margin-right: 3rem;
   }

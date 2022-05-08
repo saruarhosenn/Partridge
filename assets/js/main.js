@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  /* ====== gallery page hero section select ====== */
+  $(".gallery-page-select").niceSelect();
+
   /* ======= sticky menu ======= */
   $(".show-sticky-menu").waypoint(function (direction) {
     if (direction == "down") {
@@ -26,8 +29,7 @@ $(document).ready(function () {
     $(".newsletter-title").show();
   });
 
-  /* ====== gallery page hero section select ====== */
-  $(".gallery-page-select").niceSelect();
+  
   /* ====== nav check in select ====== */
   $(".nav-check-in-main-select").niceSelect();
   /* ====== check in section select ====== */

@@ -118,7 +118,6 @@ Variables
   /*___________ BTN BG Color ___________*/
   --btn-bg: #b68e4b;
   --btn-hover-bg: #455e4f;
-  /*___________ Overlay Color ___________*/
 }
 /*
 ========================================================
@@ -506,8 +505,8 @@ Start Reuseble Components
     url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top / cover;
   padding-top: 3.8rem;
   padding-bottom: 3.8rem;
-  position: absolute;
-  top: -3rem;
+  position: fixed;
+  top: 0;
   right: -150%;
   width: 100%;
   height: 100%;
@@ -622,7 +621,7 @@ Start Reuseble Components
 }
 
 .sticky-menu .sticky-header-logo .sticky-header-logo-svg {
-  max-width: 10rem;
+  max-width: 11rem;
 }
 
 /*----- 
@@ -656,7 +655,7 @@ Nav Bar Check In
     right: 0rem;
     width: 1.2rem;
     height: 0.7rem;
-    background: url("../images/reuse-image/arrow_down.svg") no-repeat center /
+    background: url("../images/reuse-image/arrow_down_select.svg") no-repeat center /
       1.2rem 0.7rem;
     z-index: 1;
   }
@@ -694,7 +693,7 @@ Nav Bar Check In
 
   .nav-check-in-select .nav-check-in-main-select::after {
     border: 0;
-    background: url("../images/reuse-image/arrow_down.svg") no-repeat center /
+    background: url("../images/reuse-image/arrow_down_select.svg") no-repeat center /
       1.2rem 0.7rem;
     width: 1.2rem;
     height: 0.7rem;
@@ -1126,8 +1125,10 @@ Nav Bar Check In
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
-  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(1000%) contrast(100%);
-  -webkit-filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(308deg) brightness(1000%) contrast(100%);
+  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(308deg)
+    brightness(1000%) contrast(100%);
+  -webkit-filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(308deg)
+    brightness(1000%) contrast(100%);
 }
 
 /* 
