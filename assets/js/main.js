@@ -29,12 +29,10 @@ $(document).ready(function () {
     $(".newsletter-title").show();
   });
 
-  
   /* ====== nav check in select ====== */
   $(".nav-check-in-main-select").niceSelect();
   /* ====== check in section select ====== */
   $(".check-in-main-select").niceSelect();
-  
 
   /* ====== nav date ====== */
   $(function () {

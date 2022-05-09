@@ -172,7 +172,7 @@ Responsive Breakpoint
     font-size: 1.6rem;
   }
   .btn-small {
-    max-width: 22rem;
+    min-width: 22rem;
   }
 
   /* --- Guests Testimonials --- */
@@ -372,7 +372,7 @@ Responsive Breakpoint
     font-size: 1.5rem;
   }
   .btn-small {
-    max-width: 20rem;
+    min-width: 20rem;
   }
 
   /* ----- Check In ----- */
@@ -511,6 +511,10 @@ Responsive Breakpoint
 	Start Weddings Page Responsive
 	===============================================================
 	*/
+  .weddings-text .weddings-text-btn,
+  .weddings-cakes-text .weddings-cakes-text-btn {
+    min-width: 22rem;
+  }
   /* --- Weddings Section --- */
   .weddings-text {
     max-width: 100%;
@@ -543,6 +547,9 @@ Responsive Breakpoint
   }
 
   /* --- Events Section --- */
+  .events-text .events-text-btn {
+    min-width: 22rem;
+  }
   .events-img-col {
     position: static;
     transform: translateY(0%);
@@ -588,10 +595,11 @@ Responsive Breakpoint
   .navBar .header-btn .menu-open-btn {
     padding: 0 3rem;
   }
-  .navBar .header-btn a {
+  .navBar .header-btn .reserve-btn,
+  .navBar .header-btn .menu-open-btn {
     font-size: 1.3rem;
   }
-  .navBar .header-btn a img {
+  .navBar .header-btn .menu-open-btn img {
     width: 2.5rem;
   }
   .mobile-menu-wrapper .mobile-menu-row {
@@ -873,10 +881,10 @@ Responsive Breakpoint
 	===============================================================
 	*/
   /*---- Header ----*/
-  .navBar .header-btn a:first-child {
+  .navBar .header-btn .reserve-btn {
     max-width: 16rem;
   }
-  .navBar .header-btn a:last-child {
+  .navBar .header-btn .menu-open-btn {
     max-width: 13rem;
   }
   .mobile-menu-logo-row {
@@ -1471,17 +1479,18 @@ Responsive Breakpoint
   .navBar .header-logo .header-logo-svg {
     max-width: 11rem;
   }
-  .navBar .header-btn a {
+  .navBar .header-btn .reserve-btn,
+  .navBar .header-btn .menu-open-btn {
     font-size: 1.2rem;
   }
-  .navBar .header-btn a:first-child {
+  .navBar .header-btn .reserve-btn {
     max-width: 15rem;
     margin-right: 1.5rem;
   }
-  .navBar .header-btn a:last-child {
+  .navBar .header-btn .menu-open-btn {
     max-width: 12rem;
   }
-  .navBar .header-btn a img {
+  .navBar .header-btn .menu-open-btn img {
     width: 2rem;
   }
   .navBar .mobile-menu-wrapper {
@@ -1728,7 +1737,7 @@ Responsive Breakpoint
 	===============================================================
 	*/
   /*----- Header ------*/
-  .navBar .header-btn a:first-child {
+  .navBar .header-btn .reserve-btn {
     display: none;
   }
   .mobile-menu-social2 .mobile-menu-social-item2:not(:last-child) {

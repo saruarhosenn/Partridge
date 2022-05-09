@@ -490,6 +490,11 @@ Start Reuseble Components
   z-index: 9999;
 }
 
+.navBar .header-btn .reserve-btn {
+ width: 100%;
+ max-width: 29rem;
+}
+
 .navBar .header-btn .menu-open-btn {
   padding: 0 3.2rem;
 }
@@ -655,8 +660,8 @@ Nav Bar Check In
     right: 0rem;
     width: 1.2rem;
     height: 0.7rem;
-    background: url("../images/reuse-image/arrow_down_select.svg") no-repeat center /
-      1.2rem 0.7rem;
+    background: url("../images/reuse-image/arrow_down_select.svg") no-repeat
+      center / 1.2rem 0.7rem;
     z-index: 1;
   }
 
@@ -693,8 +698,8 @@ Nav Bar Check In
 
   .nav-check-in-select .nav-check-in-main-select::after {
     border: 0;
-    background: url("../images/reuse-image/arrow_down_select.svg") no-repeat center /
-      1.2rem 0.7rem;
+    background: url("../images/reuse-image/arrow_down_select.svg") no-repeat
+      center / 1.2rem 0.7rem;
     width: 1.2rem;
     height: 0.7rem;
     top: 50%;
@@ -744,8 +749,6 @@ Nav Bar Check In
 /*---- All Button 
 -----------------------*/
 .btn-bg {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -768,18 +771,18 @@ Nav Bar Check In
 }
 
 .btn-large {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   width: 100%;
   max-width: 53.6rem;
 }
 
 .btn-medium {
-  width: 100%;
-  max-width: 29rem;
+  min-width: 29rem;
 }
 
 .btn-small {
-  width: 100%;
-  max-width: 26rem;
+  min-width: 26rem;
 }
 
 /*---- Background Image
@@ -1163,19 +1166,6 @@ Hero Section
   font-size: 12rem;
   line-height: 1.2;
 }
-
-/* .home-hero-video {
-  width: 100% !important;
-  height: 100vh !important;
-  object-fit: cover !important;
-  z-index: -1;
-  position: static !important;
-  transform: translate(0) !important;
-  -webkit-transform: translate(0) !important;
-  -moz-transform: translate(0) !important;
-  -ms-transform: translate(0) !important;
-  -o-transform: translate(0) !important;
-} */
 
 /*------------- 
 Getaway Section 
@@ -1654,6 +1644,7 @@ Hero Section
   left: 50%;
   font-size: 40rem;
   line-height: 1;
+  opacity: 0.7;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -1720,6 +1711,14 @@ Timeline Section
 .timeline-text .timeline-text-title {
   font-size: 4rem;
   line-height: 1.2;
+}
+
+/*------------- 
+Curio Collection Section
+------------------------------
+*/
+.curio-collection-text .curio-collection-btn {
+  max-width: 30.5rem;
 }
 
 /*------------- 
