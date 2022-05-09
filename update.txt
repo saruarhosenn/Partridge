@@ -1,6 +1,0 @@
-1) Preloader ---------------------------------
-2) Menu left, right overlay ------------------
-3) All btn responsive width fixed ------------ end
-4) All page eksathe responsive check --------- end
-5) Header html markup all page include & show-sticky-menu class add -------
-6) Jquery code problem ----------------------------------------------------

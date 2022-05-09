@@ -39,6 +39,21 @@ Responsive Breakpoint
 	*/
   /*---- Header ----*/
   .navBar .mobile-menu-wrapper {
+    background: -webkit-gradient(
+        linear,
+        left top, right top,
+        color-stop(58%, rgba(30, 47, 37, 0.9)),
+        color-stop(42%, rgba(69, 94, 79, 0.8))
+      ),
+      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
+        cover;
+    background: -o-linear-gradient(
+        left,
+        rgba(30, 47, 37, 0.9) 58%,
+        rgba(69, 94, 79, 0.8) 42%
+      ),
+      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
+        cover;
     background: linear-gradient(
         to right,
         rgba(30, 47, 37, 0.9) 58%,
@@ -137,6 +152,21 @@ Responsive Breakpoint
     margin-bottom: 5rem;
   }
   .navBar .mobile-menu-wrapper {
+    background: -webkit-gradient(
+        linear,
+        left top, right top,
+        color-stop(57%, rgba(30, 47, 37, 0.9)),
+        color-stop(43%, rgba(69, 94, 79, 0.8))
+      ),
+      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
+        cover;
+    background: -o-linear-gradient(
+        left,
+        rgba(30, 47, 37, 0.9) 57%,
+        rgba(69, 94, 79, 0.8) 43%
+      ),
+      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
+        cover;
     background: linear-gradient(
         to right,
         rgba(30, 47, 37, 0.9) 57%,
@@ -319,6 +349,21 @@ Responsive Breakpoint
 	*/
   /*---- Header ----*/
   .navBar .mobile-menu-wrapper {
+    background: -webkit-gradient(
+        linear,
+        left top, right top,
+        color-stop(58.5%, rgba(30, 47, 37, 0.9)),
+        color-stop(41.5%, rgba(69, 94, 79, 0.8))
+      ),
+      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
+        cover;
+    background: -o-linear-gradient(
+        left,
+        rgba(30, 47, 37, 0.9) 58.5%,
+        rgba(69, 94, 79, 0.8) 41.5%
+      ),
+      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
+        cover;
     background: linear-gradient(
         to right,
         rgba(30, 47, 37, 0.9) 58.5%,
@@ -902,6 +947,21 @@ Responsive Breakpoint
     max-width: 14rem;
   }
   .navBar .mobile-menu-wrapper {
+    background: -webkit-gradient(
+        linear,
+        left top, right top,
+        from(rgba(30, 47, 37, 0.9)),
+        to(rgba(69, 94, 79, 0.8))
+      ),
+      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
+        cover;
+    background: -o-linear-gradient(
+        left,
+        rgba(30, 47, 37, 0.9),
+        rgba(69, 94, 79, 0.8)
+      ),
+      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
+        cover;
     background: linear-gradient(
         to right,
         rgba(30, 47, 37, 0.9),
@@ -958,6 +1018,9 @@ Responsive Breakpoint
   }
   .check-in-submit-box {
     padding-left: 1.5rem;
+  }
+  .check-in-submit-btn {
+    max-width: 100%;
   }
   .check-in-main-select {
     font-size: 4rem;
@@ -1569,6 +1632,22 @@ Responsive Breakpoint
   .newsletter-form .newsletter-form-name {
     font-size: 2.5rem;
   }
+  .newsletter-form-input::-webkit-input-placeholder {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .newsletter-form-input::-moz-placeholder {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .newsletter-form-input:-ms-input-placeholder {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .newsletter-form-input::-ms-input-placeholder {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
   .newsletter-form-input::placeholder {
     padding-top: 1rem;
     font-size: 1.2rem;
@@ -1851,7 +1930,9 @@ Responsive Breakpoint
 	*/
   /* --- Hero Section --- */
   .gallery-page-select-col {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: 100%;
   }
 

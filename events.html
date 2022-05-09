@@ -20,6 +20,8 @@
     />
     <!------- Css Here ------->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/spacing.css" />
@@ -32,15 +34,7 @@
 	  PRELOADER 
 	  =====================================================
 	-->
-    <!-- <div class="preloader">
-      <div class="preloader-wrapper">
-        <img
-          src="assets/images/reuse-image/header/mobile-menu-logo.svg"
-          alt="preloader"
-          class="preloader-img"
-        />
-      </div>
-    </div> -->
+
     <!-- 
 	  =====================================================
 	  PRELOADER 
@@ -52,37 +46,118 @@
 	  Start Header Section 
 	  =====================================================
 	  -->
-    <header class="transparent-header header-sticky">
+    <header class="transparent-header">
       <nav class="navBar">
         <div
-          class="container d-flex justify-content-between align-items-center"
+          class="container"
         >
-          <!--======== Logo =========-->
-          <div class="header-logo">
-            <a href="index.html">
-              <img
-                src="assets/images/reuse-image/header/header-logo.svg"
-                alt="header logo"
-                class="header-logo-svg"
-              />
-            </a>
-          </div>
-
-          <!--======= Header Btn, Menu Open Btn =======-->
-          <div class="header-btn d-flex align-items-center justify-content-end">
-            <a href="#" class="reserve-btn btn-bg btn-medium me-20"
-              >RESERVE NOW</a
-            >
-            <a
-              href="javascript:void(0)"
-              class="menu-open-btn btn-bg d-flex align-items-center justify-content-center"
-            >
-              <span class="me-20">MENU</span>
-              <img
-                src="assets/images/reuse-image/header/menu-bar.svg"
-                alt="menu-bar"
-              />
-            </a>
+          <div class="row g-0 align-items-center">
+            <div class="col-3 col-lg-2">
+              <!--======== Logo =========-->
+              <div class="header-logo">
+                <a href="index.html">
+                  <img
+                    src="assets/images/reuse-image/header/header-logo.svg"
+                    alt="header logo"
+                    class="header-logo-svg"
+                  />
+                </a>
+              </div>
+              <!--======== Sticky Menu Logo =========-->
+              <div class="sticky-header-logo">
+                <a href="index.html">
+                  <img
+                    src="assets/images/reuse-image/header/header-logo.svg"
+                    alt="header logo"
+                    class="sticky-header-logo-svg"
+                  />
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-9 col-lg-10">
+              <div class="row g-0 align-items-center">
+                <!--=========== Check In Form ===========-->
+                <form action="#" class="navBar-check-in col-lg-7 col-xxl-6 ms-xxl-auto">
+                  <div class="row g-0">
+                    <div class="col-lg-7">
+                      <div class="nav-check-in-datepicker-wrapper d-flex align-items-center justify-content-between pe-20 nav-check-in-border h-100">
+                        <div class="nav-check-in-datepicker">
+                          <p class="mb-05 primary-font-normal size-xxm third-color">Check In</p>
+                          <div class="nav-check-in-datepicker-input-box">
+                            <input type="text" name="nav-check-in-datepicker" value="" class="nav-check-in-datepicker-input w-100" />
+                          </div>
+                        </div>
+                        <div class="nav-check-in-datepicker">
+                          <p class="mb-05 primary-font-normal size-xxm third-color">Check Out</p>
+                          <div class="nav-check-in-datepicker-input-box">
+                            <input type="text" name="nav-check-in-datepicker" value="" class="nav-check-in-datepicker-input w-100" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 d-flex align-items-center justify-content-between h-100">
+                      <div class="nav-check-in-select nav-check-in-border px-20">
+                        <div class="nav-check-in-select-data">
+                          <p class="primary-font-normal third-color">Adults</p>
+                          <select class="nav-check-in-main-select">
+                            <option data-display="1">
+                              1
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="nav-check-in-select nav-check-in-border px-20">
+                        <div class="nav-check-in-select-data">
+                          <p class="primary-font-normal third-color">Children</p>
+                          <select class="nav-check-in-main-select">
+                            <option data-display="0">
+                              0
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!--======= Header Btn, Menu Open Btn =======-->
+                <div class="col-lg-5 col-xxl-4 header-btn-col">
+                  <div class="header-btn d-flex align-items-center justify-content-end ps-20">
+                    <a href="#" class="reserve-btn btn-bg me-20"
+                      >RESERVE NOW</a
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="menu-open-btn btn-bg d-flex align-items-center justify-content-center"
+                    >
+                      <span class="me-20">MENU</span>
+                      <img
+                        src="assets/images/reuse-image/header/menu-bar.svg"
+                        alt="menu-bar"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!--======== Mobile Menu =========-->
@@ -308,7 +383,7 @@
 		  Start Events Section 
 		  =====================================================
 		  -->
-      <section class="events-section pt-160 pb-80">
+      <section class="events-section pt-160 pb-80 show-sticky-menu">
         <div class="position-relative">
           <div class="container">
             <!----- Start row ----->
@@ -652,6 +727,10 @@
 
     <!--------- jS Here --------->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>

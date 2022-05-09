@@ -415,70 +415,6 @@ Background Color
 Start Reuseble Components
 =========================================================================
 */
-/*---- Preloader
--------------------------*/
-.preloader {
-  position: relative;
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  z-index: 9999999;
-  width: 100%;
-  height: 100vh;
-  background: no-repeat center / cover;
-}
-
-.preloader::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: #455e4f;
-  opacity: 95%;
-}
-
-.preloader-wrapper {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.preloader-content {
-  position: relative;
-  z-index: 1;
-}
-
-.preloader-percentage {
-  font-size: 4rem;
-  line-height: 5.5rem;
-}
-
-.disppear {
-  -webkit-animation: vanish 1s forwards;
-  animation: vanish 1s forwards;
-}
-
-@-webkit-keyframes vanish {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes vanish {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
 /*---- Header  
 ---------------------------*/
 .transparent-header {
@@ -491,8 +427,8 @@ Start Reuseble Components
 }
 
 .navBar .header-btn .reserve-btn {
- width: 100%;
- max-width: 29rem;
+  width: 100%;
+  max-width: 29rem;
 }
 
 .navBar .header-btn .menu-open-btn {
@@ -502,6 +438,19 @@ Start Reuseble Components
 /*---- Mobile Menu 
 ------------------------*/
 .navBar .mobile-menu-wrapper {
+  background: -webkit-gradient(
+      linear,
+      left top, right top,
+      color-stop(60%, rgba(30, 47, 37, 0.9)),
+      color-stop(40%, rgba(69, 94, 79, 0.8))
+    ),
+    url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top / cover;
+  background: -o-linear-gradient(
+      left,
+      rgba(30, 47, 37, 0.9) 60%,
+      rgba(69, 94, 79, 0.8) 40%
+    ),
+    url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top / cover;
   background: linear-gradient(
       to right,
       rgba(30, 47, 37, 0.9) 60%,
@@ -517,7 +466,6 @@ Start Reuseble Components
   height: 100%;
   height: 100vh;
   z-index: 99999;
-  background-color: #4c5158;
   overflow-x: hidden;
   overflow-y: scroll;
   /* hide scrollbar but allow scrolling */
@@ -629,6 +577,13 @@ Start Reuseble Components
   max-width: 11rem;
 }
 
+.header-btn-col {
+  margin-left: auto;
+}
+
+.sticky-menu .header-btn-col {
+  margin-left: 0;
+}
 /*----- 
 Nav Bar Check In
 --------------------------*/
@@ -749,9 +704,15 @@ Nav Bar Check In
 /*---- All Button 
 -----------------------*/
 .btn-bg {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 6rem;
   font-family: var(--primary-font-normal);
   font-size: var(--size-md);
@@ -836,6 +797,17 @@ Nav Bar Check In
   position: absolute;
   left: 0;
   bottom: 0;
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(255, 255, 255, 0)),
+    to(rgba(182, 142, 75, 0.9))
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0),
+    rgba(182, 142, 75, 0.9)
+  );
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
@@ -858,7 +830,9 @@ Nav Bar Check In
 ---------------------------*/
 .h-line {
   margin: 0 3rem;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   border-bottom: 1px solid;
 }
 
@@ -909,6 +883,34 @@ Nav Bar Check In
   z-index: 1;
 }
 
+.check-in-datepicker .check-in-datepicker-input-box::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-xxm);
+  color: var(--four-color);
+  background-color: var(--third-bg);
+}
+
+.check-in-datepicker .check-in-datepicker-input-box::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-xxm);
+  color: var(--four-color);
+  background-color: var(--third-bg);
+}
+
+.check-in-datepicker .check-in-datepicker-input-box:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-xxm);
+  color: var(--four-color);
+  background-color: var(--third-bg);
+}
+
+.check-in-datepicker .check-in-datepicker-input-box::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-xxm);
+  color: var(--four-color);
+  background-color: var(--third-bg);
+}
+
 .check-in-datepicker .check-in-datepicker-input-box,
 .check-in-datepicker .check-in-datepicker-input-box::placeholder {
   font-family: "Montserrat", sans-serif;
@@ -930,7 +932,8 @@ Nav Bar Check In
 }
 
 .check-in-submit-btn {
-  max-width: 100% !important;
+  width: 100%;
+  max-width: 29rem;
   height: 8.6rem !important;
 }
 
@@ -1060,9 +1063,69 @@ Nav Bar Check In
 }
 
 .newsletter-form
+  :is(.newsletter-form-name, .newsletter-form-input, .newsletter-form-input::-webkit-input-placeholder) {
+  letter-spacing: 0.3rem;
+  word-spacing: 0.6rem;
+}
+
+.newsletter-form
+  :is(.newsletter-form-name, .newsletter-form-input, .newsletter-form-input::-moz-placeholder) {
+  letter-spacing: 0.3rem;
+  word-spacing: 0.6rem;
+}
+
+.newsletter-form
+  :is(.newsletter-form-name, .newsletter-form-input, .newsletter-form-input:-ms-input-placeholder) {
+  letter-spacing: 0.3rem;
+  word-spacing: 0.6rem;
+}
+
+.newsletter-form
+  :is(.newsletter-form-name, .newsletter-form-input, .newsletter-form-input::-ms-input-placeholder) {
+  letter-spacing: 0.3rem;
+  word-spacing: 0.6rem;
+}
+
+.newsletter-form
   :is(.newsletter-form-name, .newsletter-form-input, .newsletter-form-input::placeholder) {
   letter-spacing: 0.3rem;
   word-spacing: 0.6rem;
+}
+
+.newsletter-form-input::-webkit-input-placeholder {
+  width: 100%;
+  display: block;
+  padding-bottom: 1rem;
+  font-family: var(--primary-font-normal);
+  font-size: var(--size-xxm);
+  color: var(--third-color);
+}
+
+.newsletter-form-input::-moz-placeholder {
+  width: 100%;
+  display: block;
+  padding-bottom: 1rem;
+  font-family: var(--primary-font-normal);
+  font-size: var(--size-xxm);
+  color: var(--third-color);
+}
+
+.newsletter-form-input:-ms-input-placeholder {
+  width: 100%;
+  display: block;
+  padding-bottom: 1rem;
+  font-family: var(--primary-font-normal);
+  font-size: var(--size-xxm);
+  color: var(--third-color);
+}
+
+.newsletter-form-input::-ms-input-placeholder {
+  width: 100%;
+  display: block;
+  padding-bottom: 1rem;
+  font-family: var(--primary-font-normal);
+  font-size: var(--size-xxm);
+  color: var(--third-color);
 }
 
 .newsletter-form-input,
@@ -1073,6 +1136,22 @@ Nav Bar Check In
   font-family: var(--primary-font-normal);
   font-size: var(--size-xxm);
   color: var(--third-color);
+}
+
+.newsletter-form-input::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.newsletter-form-input::-moz-placeholder {
+  text-transform: uppercase;
+}
+
+.newsletter-form-input:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.newsletter-form-input::-ms-input-placeholder {
+  text-transform: uppercase;
 }
 
 .newsletter-form-input::placeholder {
@@ -1159,7 +1238,8 @@ Hero Section
 .home-hero-video {
   width: 100%;
   min-height: 100vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home-hero-wrapper .home-hero-text .home-hero-text-title {
@@ -1249,9 +1329,15 @@ Gallery Section
   position: absolute;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 111;
 }
 
@@ -1383,10 +1469,50 @@ Accessible Rooms Section
   min-height: 25.8rem;
 }
 
+.accessible-rooms-form .accessible-rooms-form-input::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: #a0a5a8;
+}
+
+.accessible-rooms-form .accessible-rooms-form-input::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: #a0a5a8;
+}
+
+.accessible-rooms-form .accessible-rooms-form-input:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: #a0a5a8;
+}
+
+.accessible-rooms-form .accessible-rooms-form-input::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  color: #a0a5a8;
+}
+
 .accessible-rooms-form .accessible-rooms-form-input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   color: #a0a5a8;
+}
+
+.accessible-rooms-form .accessible-rooms-form-input::-webkit-input-placeholder {
+  font-size: var(--size-sm);
+}
+
+.accessible-rooms-form .accessible-rooms-form-input::-moz-placeholder {
+  font-size: var(--size-sm);
+}
+
+.accessible-rooms-form .accessible-rooms-form-input:-ms-input-placeholder {
+  font-size: var(--size-sm);
+}
+
+.accessible-rooms-form .accessible-rooms-form-input::-ms-input-placeholder {
+  font-size: var(--size-sm);
 }
 
 .accessible-rooms-form .accessible-rooms-form-input,
@@ -1493,6 +1619,17 @@ Food Menu Item Section
 
 .food-manu-item-slider::after {
   top: 0;
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(182, 142, 75, 0.9)),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(182, 142, 75, 0.9),
+    rgba(255, 255, 255, 0)
+  );
   background: linear-gradient(
     to bottom,
     rgba(182, 142, 75, 0.9),
@@ -1930,6 +2067,30 @@ Contact Section
 
 .contact-form-box .contact-form-message {
   height: 25.8rem;
+}
+
+.contact-form-box .contact-form-input::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-sm);
+  color: var(--four-color);
+}
+
+.contact-form-box .contact-form-input::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-sm);
+  color: var(--four-color);
+}
+
+.contact-form-box .contact-form-input:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-sm);
+  color: var(--four-color);
+}
+
+.contact-form-box .contact-form-input::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--size-sm);
+  color: var(--four-color);
 }
 
 .contact-form-box .contact-form-input,

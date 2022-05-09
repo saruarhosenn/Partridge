@@ -1,11 +1,3 @@
-/* ===== preloader ===== */
-// var loader = document.querySelector(".preloader");
-// window.addEventListener("load", vanish);
-
-// function vanish() {
-//   loader.classList.add("disppear");
-// }
-
 /* ===== all rooms slider ===== */
 var swiper = new Swiper(".rooms-slider", {
   slidesPerView: 1,
@@ -158,8 +150,8 @@ var swiper = new Swiper(".gallery-hero-slider-wrapper", {
     prevEl: ".swiper-prev",
   },
   pagination: {
-    el: '.swiper-slider-pagination',
-    type: 'fraction',
+    el: ".swiper-slider-pagination",
+    type: "fraction",
   },
 });
 
