@@ -38,30 +38,25 @@ Responsive Breakpoint
 	===============================================================
 	*/
   /*---- Header ----*/
-  .navBar .mobile-menu-wrapper {
+  .navBar .mobile-menu-wrapper .mobile-menu-gradient {
     background: -webkit-gradient(
-        linear,
-        left top, right top,
-        color-stop(58%, rgba(30, 47, 37, 0.9)),
-        color-stop(42%, rgba(69, 94, 79, 0.8))
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      linear,
+      left top, right top,
+      color-stop(58%, rgba(30, 47, 37, 0.9)),
+      color-stop(42%, rgba(69, 94, 79, 0.8))
+    );
     background: -o-linear-gradient(
-        left,
-        rgba(30, 47, 37, 0.9) 58%,
-        rgba(69, 94, 79, 0.8) 42%
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      left,
+      rgba(30, 47, 37, 0.9) 58%,
+      rgba(69, 94, 79, 0.8) 42%
+    );
     background: linear-gradient(
-        to right,
-        rgba(30, 47, 37, 0.9) 58%,
-        rgba(69, 94, 79, 0.8) 42%
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      to right,
+      rgba(30, 47, 37, 0.9) 58%,
+      rgba(69, 94, 79, 0.8) 42%
+    );
   }
+
   .mobile-menu-wrapper .mobile-menu-row {
     margin-left: -10rem;
     margin-right: -10rem;
@@ -151,29 +146,23 @@ Responsive Breakpoint
   .mobile-menu-logo-row {
     margin-bottom: 5rem;
   }
-  .navBar .mobile-menu-wrapper {
+  .navBar .mobile-menu-wrapper .mobile-menu-gradient {
     background: -webkit-gradient(
-        linear,
-        left top, right top,
-        color-stop(57%, rgba(30, 47, 37, 0.9)),
-        color-stop(43%, rgba(69, 94, 79, 0.8))
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      linear,
+      left top, right top,
+      color-stop(57%, rgba(30, 47, 37, 0.9)),
+      color-stop(43%, rgba(69, 94, 79, 0.8))
+    );
     background: -o-linear-gradient(
-        left,
-        rgba(30, 47, 37, 0.9) 57%,
-        rgba(69, 94, 79, 0.8) 43%
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      left,
+      rgba(30, 47, 37, 0.9) 57%,
+      rgba(69, 94, 79, 0.8) 43%
+    );
     background: linear-gradient(
-        to right,
-        rgba(30, 47, 37, 0.9) 57%,
-        rgba(69, 94, 79, 0.8) 43%
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      to right,
+      rgba(30, 47, 37, 0.9) 57%,
+      rgba(69, 94, 79, 0.8) 43%
+    );
   }
   .mobile-menu-wrapper .mobile-menu-row {
     margin-left: -6rem;
@@ -348,29 +337,23 @@ Responsive Breakpoint
 	===============================================================
 	*/
   /*---- Header ----*/
-  .navBar .mobile-menu-wrapper {
+  .navBar .mobile-menu-wrapper .mobile-menu-gradient {
     background: -webkit-gradient(
-        linear,
-        left top, right top,
-        color-stop(58.5%, rgba(30, 47, 37, 0.9)),
-        color-stop(41.5%, rgba(69, 94, 79, 0.8))
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      linear,
+      left top, right top,
+      color-stop(58.5%, rgba(30, 47, 37, 0.9)),
+      color-stop(41.5%, rgba(69, 94, 79, 0.8))
+    );
     background: -o-linear-gradient(
-        left,
-        rgba(30, 47, 37, 0.9) 58.5%,
-        rgba(69, 94, 79, 0.8) 41.5%
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      left,
+      rgba(30, 47, 37, 0.9) 58.5%,
+      rgba(69, 94, 79, 0.8) 41.5%
+    );
     background: linear-gradient(
-        to right,
-        rgba(30, 47, 37, 0.9) 58.5%,
-        rgba(69, 94, 79, 0.8) 41.5%
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      to right,
+      rgba(30, 47, 37, 0.9) 58.5%,
+      rgba(69, 94, 79, 0.8) 41.5%
+    );
   }
   .mobile-menu-wrapper .mobile-menu-row {
     margin-left: -6rem;
@@ -946,29 +929,23 @@ Responsive Breakpoint
   .navBar .header-logo .header-logo-svg {
     max-width: 14rem;
   }
-  .navBar .mobile-menu-wrapper {
+  .navBar .mobile-menu-wrapper .mobile-menu-gradient {
     background: -webkit-gradient(
-        linear,
-        left top, right top,
-        from(rgba(30, 47, 37, 0.9)),
-        to(rgba(69, 94, 79, 0.8))
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      linear,
+      left top, right top,
+      from(rgba(30, 47, 37, 0.9)),
+      to(rgba(69, 94, 79, 0.8))
+    );
     background: -o-linear-gradient(
-        left,
-        rgba(30, 47, 37, 0.9),
-        rgba(69, 94, 79, 0.8)
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      left,
+      rgba(30, 47, 37, 0.9),
+      rgba(69, 94, 79, 0.8)
+    );
     background: linear-gradient(
-        to right,
-        rgba(30, 47, 37, 0.9),
-        rgba(69, 94, 79, 0.8)
-      ),
-      url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top /
-        cover;
+      to right,
+      rgba(30, 47, 37, 0.9),
+      rgba(69, 94, 79, 0.8)
+    );
   }
   .mobile-menu-contact {
     margin-top: 5rem;
@@ -1556,7 +1533,7 @@ Responsive Breakpoint
   .navBar .header-btn .menu-open-btn img {
     width: 2rem;
   }
-  .navBar .mobile-menu-wrapper {
+  .navBar .mobile-menu-wrapper .mobile-menu-gradient {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -1931,8 +1908,8 @@ Responsive Breakpoint
   /* --- Hero Section --- */
   .gallery-page-select-col {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 100%;
   }
 

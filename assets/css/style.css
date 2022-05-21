@@ -438,27 +438,7 @@ Start Reuseble Components
 /*---- Mobile Menu 
 ------------------------*/
 .navBar .mobile-menu-wrapper {
-  background: -webkit-gradient(
-      linear,
-      left top, right top,
-      color-stop(60%, rgba(30, 47, 37, 0.9)),
-      color-stop(40%, rgba(69, 94, 79, 0.8))
-    ),
-    url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top / cover;
-  background: -o-linear-gradient(
-      left,
-      rgba(30, 47, 37, 0.9) 60%,
-      rgba(69, 94, 79, 0.8) 40%
-    ),
-    url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top / cover;
-  background: linear-gradient(
-      to right,
-      rgba(30, 47, 37, 0.9) 60%,
-      rgba(69, 94, 79, 0.8) 40%
-    ),
-    url("../images/reuse-image/header/mobile-menu-bg.png") no-repeat top / cover;
-  padding-top: 3.8rem;
-  padding-bottom: 3.8rem;
+  background: no-repeat top / cover;
   position: fixed;
   top: 0;
   right: -150%;
@@ -474,6 +454,29 @@ Start Reuseble Components
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
+}
+
+.navBar .mobile-menu-wrapper .mobile-menu-gradient {
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    color-stop(60%, rgba(30, 47, 37, 0.9)),
+    color-stop(40%, rgba(69, 94, 79, 0.8))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(30, 47, 37, 0.9) 60%,
+    rgba(69, 94, 79, 0.8) 40%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(30, 47, 37, 0.9) 60%,
+    rgba(69, 94, 79, 0.8) 40%
+  );
+  padding-top: 3.8rem;
+  padding-bottom: 3.8rem;
+  min-height: 100%;
+  min-height: 100vh;
 }
 
 .navBar .mobile-menu-wrapper::-webkit-scrollbar {
@@ -708,11 +711,11 @@ Nav Bar Check In
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 6rem;
   font-family: var(--primary-font-normal);
   font-size: var(--size-md);
@@ -797,16 +800,16 @@ Nav Bar Check In
   position: absolute;
   left: 0;
   bottom: 0;
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0),
+    rgba(182, 142, 75, 0.9)
+  );
   background: -webkit-gradient(
     linear,
     left top, left bottom,
     from(rgba(255, 255, 255, 0)),
     to(rgba(182, 142, 75, 0.9))
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(255, 255, 255, 0),
-    rgba(182, 142, 75, 0.9)
   );
   background: linear-gradient(
     to bottom,
@@ -831,8 +834,8 @@ Nav Bar Check In
 .h-line {
   margin: 0 3rem;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border-bottom: 1px solid;
 }
 
@@ -1239,7 +1242,7 @@ Hero Section
   width: 100%;
   min-height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .home-hero-wrapper .home-hero-text .home-hero-text-title {
@@ -1333,11 +1336,11 @@ Gallery Section
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   z-index: 111;
 }
 
@@ -1619,16 +1622,16 @@ Food Menu Item Section
 
 .food-manu-item-slider::after {
   top: 0;
+  background: -o-linear-gradient(
+    top,
+    rgba(182, 142, 75, 0.9),
+    rgba(255, 255, 255, 0)
+  );
   background: -webkit-gradient(
     linear,
     left top, left bottom,
     from(rgba(182, 142, 75, 0.9)),
     to(rgba(255, 255, 255, 0))
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(182, 142, 75, 0.9),
-    rgba(255, 255, 255, 0)
   );
   background: linear-gradient(
     to bottom,
